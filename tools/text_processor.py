@@ -27,27 +27,53 @@ import jieba.analyse
 
 # 毛泽东著作特有概念词典
 MAO_CONCEPTS = {
-    # 哲学概念
+    # 哲学概念（扩展）
     "实践论", "矛盾论", "实事求是", "群众路线", "阶级斗争",
     "主要矛盾", "次要矛盾", "矛盾转化", "对立统一", "辩证唯物主义",
     "历史唯物主义", "主观主义", "客观主义", "教条主义", "经验主义",
+    "主观能动性", "客观规律性", "辩证统一", "否定之否定", "量变质变",
+    "认识论", "方法论", "世界观", "价值观", "真理标准",
     
-    # 政治概念
+    # 政治概念（扩展）
     "新民主主义", "社会主义", "共产主义", "统一战线", "人民民主专政",
     "无产阶级", "资产阶级", "小资产阶级", "工农联盟", "人民战争",
+    "社会主义改造", "自力更生", "计划经济", "农业合作化", "工业体系",
+    "百花齐放", "百家争鸣", "古为今用", "洋为中用", "文化革命",
     
-    # 工作方法
+    # 工作方法（扩展）
     "调查研究", "批评与自我批评", "惩前毖后", "治病救人", "从群众中来",
     "到群众中去", "集中起来", "坚持下去", "试点推广", "典型试验",
+    "抓典型", "解剖麻雀", "蹲点调研", "开调查会", "走马观花",
+    "下马看花", "胸中有数", "心中有全局", "手中有典型", "一般号召",
+    "个别指导", "突破一点", "取得经验", "推动全面", "以点带面",
     
-    # 军事概念
+    # 军事概念（扩展）
     "持久战", "运动战", "阵地战", "游击战", "人民战争",
     "战略防御", "战略相持", "战略反攻", "集中优势兵力", "各个歼灭",
     "战略上藐视", "战术上重视", "不打无准备之仗", "保存自己", "消灭敌人",
+    "诱敌深入", "避实击虚", "以逸待劳", "声东击西", "围点打援",
+    "十六字诀", "敌进我退", "敌驻我扰", "敌疲我打", "敌退我追",
     
-    # 高频词
+    # 领导艺术（新增）
+    "民主集中制", "集体领导", "个人负责", "从实际出发", "理论联系实际",
+    "密切联系群众", "独立自主", "自力更生", "谦虚谨慎", "戒骄戒躁",
+    "艰苦奋斗", "勤俭建国", "为人民服务", "群众观点", "群众立场",
+    
+    # 经济思想（新增）
+    "发展经济", "保障供给", "独立自主", "自力更生", "计划经济",
+    "商品经济", "价值规律", "按劳分配", "共同富裕", "农业基础",
+    "工业主导", "农轻重比例", "综合平衡", "统筹兼顾", "增产节约",
+    
+    # 文化教育（新增）
+    "教育革命", "文艺为人民", "普及提高", "红专结合", "德智体",
+    "学以致用", "教育与生产劳动相结合", "知识分子工农化", "文化普及",
+    
+    # 高频词（扩展）
     "革命", "建设", "斗争", "团结", "胜利", "失败", "困难", "光明",
     "我们", "你们", "他们", "同志", "人民", "群众", "党", "国家",
+    "军队", "干部", "领导", "敌人", "朋友", "原则", "政策", "策略",
+    "方针", "路线", "纲领", "任务", "目标", "计划", "步骤", "措施",
+    "经验", "教训", "成绩", "缺点", "优点", "错误", "正确", "真理",
 }
 
 @dataclass
@@ -235,6 +261,134 @@ class MaoTextProcessor:
             "top_words": top_words,
         }
     
+    def analyze_argument_structure(self, text: str) -> Dict[str, Any]:
+        """分析毛泽东的论证结构"""
+        # 识别常见的毛泽东论证模式
+        argument_patterns = {
+            "提出问题": r'[。！？][^。！？]*问题[^。！？]*[？\?]|[^。！？]*什么[^。！？]*[？\?]',
+            "分析矛盾": r'[^。！？]*矛盾[^。！？]*[。！？]|[^。！？]*一方面[^。！？]*另一方面[^。！？]*',
+            "给出对策": r'[^。！？]*必须[^。！？]*[。！？]|[^。！？]*应当[^。！？]*[。！？]|[^。！？]*要[^。！？]*[。！？]',
+            "总结升华": r'[^。！？]*总之[^。！？]*[。！？]|[^。！？]*总而言之[^。！？]*[。！？]|[^。！？]*综上所述[^。！？]*[。！？]',
+        }
+        
+        structure_counts = {}
+        for name, pattern in argument_patterns.items():
+            matches = re.findall(pattern, text)
+            structure_counts[name] = len(matches)
+        
+        # 识别论证步骤
+        steps = []
+        sentences = re.split(r'[。！？]', text)
+        
+        for i, sentence in enumerate(sentences):
+            if sentence.strip():
+                step_type = "其他"
+                if re.search(argument_patterns["提出问题"], sentence):
+                    step_type = "提出问题"
+                elif re.search(argument_patterns["分析矛盾"], sentence):
+                    step_type = "分析矛盾"
+                elif re.search(argument_patterns["给出对策"], sentence):
+                    step_type = "给出对策"
+                elif re.search(argument_patterns["总结升华"], sentence):
+                    step_type = "总结升华"
+                
+                steps.append({
+                    "step": i + 1,
+                    "sentence": sentence.strip(),
+                    "type": step_type,
+                    "length": len(sentence)
+                })
+        
+        return {
+            "structure_counts": structure_counts,
+            "argument_steps": steps[:10],  # 只返回前10步
+            "total_steps": len(steps),
+        }
+    
+    def extract_mao_analogies(self, text: str) -> List[Dict[str, str]]:
+        """提取毛泽东的比喻手法"""
+        # 毛泽东经典比喻模式
+        analogy_patterns = [
+            (r'[^。！？]*星星之火[^。！？]*可以燎原[^。！？]*[。！？]', '星星之火可以燎原'),
+            (r'[^。！？]*纸老虎[^。！？]*[。！？]', '纸老虎'),
+            (r'[^。！？]*解剖麻雀[^。！？]*[。！？]', '解剖麻雀'),
+            (r'[^。！？]*抓典型[^。！？]*[。！？]', '抓典型'),
+            (r'[^。！？]*以点带面[^。！？]*[。！？]', '以点带面'),
+            (r'[^。！？]*下马看花[^。！？]*[。！？]', '下马看花'),
+            (r'[^。！？]*走马观花[^。！？]*[。！？]', '走马观花'),
+            (r'[^。！？]*胸中有数[^。！？]*[。！？]', '胸中有数'),
+        ]
+        
+        analogies = []
+        for pattern, name in analogy_patterns:
+            matches = re.findall(pattern, text)
+            for match in matches:
+                analogies.append({
+                    "name": name,
+                    "example": match.strip(),
+                    "pattern": pattern,
+                })
+        
+        # 通用比喻模式
+        generic_analogies = re.findall(r'[^。！？]*像[^。！？]*一样[^。！？]*[。！？]', text)
+        generic_analogies.extend(re.findall(r'[^。！？]*是[^。！？]*的[^。！？]*[。！？]', text))
+        
+        for analogy in generic_analogies:
+            analogies.append({
+                "name": "通用比喻",
+                "example": analogy.strip(),
+                "pattern": "通用比喻结构",
+            })
+        
+        return analogies
+    
+    def identify_rhetorical_patterns(self, text: str) -> Dict[str, Any]:
+        """识别毛泽东的修辞模式"""
+        # 排比句识别（增强版）
+        parallelism_patterns = {
+            "三连排比": r'(既要[^，；]*又要[^，；]*还要[^，；]*)|(一方面[^，；]*另一方面[^，；]*再一方面[^，；]*)',
+            "四连排比": r'([^，；]*，[^，；]*，[^，；]*，[^，；]*[。！？])',
+            "对仗排比": r'([^，；]*不是[^，；]*而是[^，；]*[。！？])',
+        }
+        
+        parallelism_counts = {}
+        parallelism_examples = {}
+        
+        for name, pattern in parallelism_patterns.items():
+            matches = re.findall(pattern, text)
+            count = len(matches)
+            parallelism_counts[name] = count
+            if count > 0 and len(matches) > 0:
+                # 取第一个匹配作为示例
+                example = matches[0]
+                if isinstance(example, tuple):
+                    example = next((item for item in example if item), "")
+                parallelism_examples[name] = example
+        
+        # 设问句识别
+        rhetorical_questions = re.findall(r'[。！？][^。！？]*怎么办[？\?]', text)
+        rhetorical_questions.extend(re.findall(r'[。！？][^。！？]*为什么[？\?]', text))
+        rhetorical_questions.extend(re.findall(r'[。！？][^。！？]*什么[？\?]', text))
+        
+        # 对比手法
+        contrasts = re.findall(r'[^。！？]*不是[^。！？]*而是[^。！？]*[。！？]', text)
+        
+        # 引用经典
+        classical_references = re.findall(r'[^。！？]*古人云[^。！？]*[。！？]', text)
+        classical_references.extend(re.findall(r'[^。！？]*俗话说[^。！？]*[。！？]', text))
+        classical_references.extend(re.findall(r'[^。！？]*马克思[^。！？]*[。！？]', text))
+        
+        return {
+            "parallelism_counts": parallelism_counts,
+            "parallelism_examples": parallelism_examples,
+            "rhetorical_questions_count": len(rhetorical_questions),
+            "rhetorical_questions_examples": rhetorical_questions[:3],  # 前3个示例
+            "contrasts_count": len(contrasts),
+            "contrasts_examples": contrasts[:3],
+            "classical_references_count": len(classical_references),
+            "classical_references_examples": classical_references[:3],
+        }
+    
     def classify_document(self, filename: str, content: str) -> str:
         """文档分类"""
         filename_lower = filename.lower()
@@ -290,6 +444,22 @@ class MaoTextProcessor:
         
         # 分析风格
         stats = self.analyze_style(full_text)
+        
+        # 新增：分析论证结构
+        argument_structure = self.analyze_argument_structure(full_text)
+        
+        # 新增：提取毛泽东比喻
+        mao_analogies = self.extract_mao_analogies(full_text)
+        
+        # 新增：识别修辞模式
+        rhetorical_patterns = self.identify_rhetorical_patterns(full_text)
+        
+        # 合并所有分析结果到stats
+        stats.update({
+            "argument_structure": argument_structure,
+            "mao_analogies": mao_analogies,
+            "rhetorical_patterns": rhetorical_patterns,
+        })
         
         # 文档分类
         doc_type = self.classify_document(filepath.name, full_text)

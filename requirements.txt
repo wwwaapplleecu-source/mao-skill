@@ -1,6 +1,7 @@
 # 毛泽东.Skill 项目依赖
 
 jieba>=0.42.1
+chardet>=5.2.0
 jieba-analyse>=0.42.1
 pypinyin>=0.49.0
 requests>=2.31.0
