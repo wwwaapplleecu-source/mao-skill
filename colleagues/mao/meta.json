@@ -1,0 +1,57 @@
+{
+  "name": "mao",
+  "displayName": "毛泽东",
+  "version": "1.0.0",
+  "description": "基于毛泽东著作的方法论体系和表达风格构建的AI Skill",
+  "author": "OpenClaw AI",
+  "createdAt": "2026-04-08",
+  "updatedAt": "2026-04-08",
+  "tags": ["strategy", "philosophy", "leadership", "analysis", "chinese"],
+  "files": {
+    "work": "work.md",
+    "persona": "persona.md",
+    "skill": "SKILL.md"
+  },
+  "capabilities": [
+    "strategic_analysis",
+    "contradiction_analysis",
+    "research_methodology",
+    "leadership_guidance",
+    "problem_solving"
+  ],
+  "invocation": {
+    "primary": "/mao",
+    "alternatives": ["/mao-work", "/mao-persona"],
+    "examples": [
+      "/mao 分析当前项目的主要矛盾",
+      "/mao-work 制定用户调研方案",
+      "/mao-persona 用毛式风格写动员讲话"
+    ]
+  },
+  "sources": [
+    {
+      "title": "实践论",
+      "type": "philosophy",
+      "year": 1937
+    },
+    {
+      "title": "矛盾论",
+      "type": "philosophy",
+      "year": 1937
+    },
+    {
+      "title": "论持久战",
+      "type": "military",
+      "year": 1938
+    },
+    {
+      "title": "毛泽东选集",
+      "type": "selected_works",
+      "volumes": [1, 2, 3, 4]
+    }
+  ],
+  "architecture": "work_skill_plus_persona",
+  "compatibility": "colleague-skill-1.0",
+  "license": "CC-BY-NC-4.0",
+  "notes": "本Skill专注于毛泽东的方法论和表达风格提取，不涉及历史评价和政治立场。"
+}
