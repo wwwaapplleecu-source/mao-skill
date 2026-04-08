@@ -1,0 +1,39 @@
+{
+  "timestamp": "20260408_204008",
+  "total_tests": 6,
+  "passed": 6,
+  "failed": 0,
+  "errors": 0,
+  "tests": [
+    {
+      "test": "概念词典",
+      "status": "passed",
+      "message": "概念词典包含169个概念，核心概念完整"
+    },
+    {
+      "test": "概念提取",
+      "status": "passed",
+      "message": "成功提取59个概念，包含核心概念: 实践论, 认识, 实践, 辩证唯物论"
+    },
+    {
+      "test": "风格分析",
+      "status": "passed",
+      "message": "成功分析文本风格: 36个句子，1204个词"
+    },
+    {
+      "test": "论证结构",
+      "status": "passed",
+      "message": "成功分析论证结构，识别到34个论证步骤"
+    },
+    {
+      "test": "毛泽东比喻",
+      "status": "passed",
+      "message": "成功识别5个比喻，包含5个毛泽东经典比喻"
+    },
+    {
+      "test": "修辞模式",
+      "status": "passed",
+      "message": "成功识别修辞模式: 1个修辞手法"
+    }
+  ]
+}
