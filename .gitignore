@@ -41,10 +41,6 @@ Thumbs.db
 *.log
 logs/
 
-# 大型数据文件（知识库中的大文件）
-knowledge/**/*.txt
-knowledge/**/*.md
-
 # 个人配置
 config.local.json
 settings.local.json
