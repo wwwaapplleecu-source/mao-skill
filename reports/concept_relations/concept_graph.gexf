@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-09">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="frequency" type="long" />
+    </attributes>
+    <nodes>
+      <node id="群众" label="群众">
+        <attvalues>
+          <attvalue for="0" value="823" />
+        </attvalues>
+      </node>
+      <node id="经验" label="经验">
+        <attvalues>
+          <attvalue for="0" value="461" />
+        </attvalues>
+      </node>
+      <node id="军队" label="军队">
+        <attvalues>
+          <attvalue for="0" value="1040" />
+        </attvalues>
+      </node>
+      <node id="国家" label="国家">
+        <attvalues>
+          <attvalue for="0" value="810" />
+        </attvalues>
+      </node>
+      <node id="从群众中来" label="从群众中来">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="时期" label="时期">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="共产主义" label="共产主义">
+        <attvalues>
+          <attvalue for="0" value="168" />
+        </attvalues>
+      </node>
+      <node id="敌人" label="敌人">
+        <attvalues>
+          <attvalue for="0" value="1816" />
+        </attvalues>
+      </node>
+      <node id="领导" label="领导">
+        <attvalues>
+          <attvalue for="0" value="930" />
+        </attvalues>
+      </node>
+      <node id="百花齐放" label="百花齐放">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="目标" label="目标">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="你们" label="你们">
+        <attvalues>
+          <attvalue for="0" value="269" />
+        </attvalues>
+      </node>
+      <node id="同志" label="同志">
+        <attvalues>
+          <attvalue for="0" value="755" />
+        </attvalues>
+      </node>
+      <node id="资产阶级" label="资产阶级">
+        <attvalues>
+          <attvalue for="0" value="1207" />
+        </attvalues>
+      </node>
+      <node id="成绩" label="成绩">
+        <attvalues>
+          <attvalue for="0" value="95" />
+        </attvalues>
+      </node>
+      <node id="保存自己" label="保存自己">
+        <attvalues>
+          <attvalue for="0" value="71" />
+        </attvalues>
+      </node>
+      <node id="为人民服务" label="为人民服务">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="认识论" label="认识论">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="统一战线" label="统一战线">
+        <attvalues>
+          <attvalue for="0" value="644" />
+        </attvalues>
+      </node>
+      <node id="党" label="党">
+        <attvalues>
+          <attvalue for="0" value="912" />
+        </attvalues>
+      </node>
+      <node id="政策" label="政策">
+        <attvalues>
+          <attvalue for="0" value="1053" />
+        </attvalues>
+      </node>
+      <node id="胜利" label="胜利">
+        <attvalues>
+          <attvalue for="0" value="936" />
+        </attvalues>
+      </node>
+      <node id="步骤" label="步骤">
+        <attvalues>
+          <attvalue for="0" value="92" />
+        </attvalues>
+      </node>
+      <node id="矛盾论" label="矛盾论">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="主要矛盾" label="主要矛盾">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="真理" label="真理">
+        <attvalues>
+          <attvalue for="0" value="103" />
+        </attvalues>
+      </node>
+      <node id="百家争鸣" label="百家争鸣">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="他们" label="他们">
+        <attvalues>
+          <attvalue for="0" value="2252" />
+        </attvalues>
+      </node>
+      <node id="新民主主义" label="新民主主义">
+        <attvalues>
+          <attvalue for="0" value="291" />
+        </attvalues>
+      </node>
+      <node id="运动战" label="运动战">
+        <attvalues>
+          <attvalue for="0" value="245" />
+        </attvalues>
+      </node>
+      <node id="消灭敌人" label="消灭敌人">
+        <attvalues>
+          <attvalue for="0" value="103" />
+        </attvalues>
+      </node>
+      <node id="正确" label="正确">
+        <attvalues>
+          <attvalue for="0" value="663" />
+        </attvalues>
+      </node>
+      <node id="失败" label="失败">
+        <attvalues>
+          <attvalue for="0" value="547" />
+        </attvalues>
+      </node>
+      <node id="人民民主专政" label="人民民主专政">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="方法论" label="方法论">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="建设" label="建设">
+        <attvalues>
+          <attvalue for="0" value="269" />
+        </attvalues>
+      </node>
+      <node id="坚持下去" label="坚持下去">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="无产阶级" label="无产阶级">
+        <attvalues>
+          <attvalue for="0" value="657" />
+        </attvalues>
+      </node>
+      <node id="湖南" label="湖南">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="路线" label="路线">
+        <attvalues>
+          <attvalue for="0" value="482" />
+        </attvalues>
+      </node>
+      <node id="路径" label="路径">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="一般号召" label="一般号召">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="调查研究" label="调查研究">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="农业合作化" label="农业合作化">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="人民" label="人民">
+        <attvalues>
+          <attvalue for="0" value="2279" />
+        </attvalues>
+      </node>
+      <node id="缺点" label="缺点">
+        <attvalues>
+          <attvalue for="0" value="87" />
+        </attvalues>
+      </node>
+      <node id="策略" label="策略">
+        <attvalues>
+          <attvalue for="0" value="251" />
+        </attvalues>
+      </node>
+      <node id="取得经验" label="取得经验">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="持久战" label="持久战">
+        <attvalues>
+          <attvalue for="0" value="161" />
+        </attvalues>
+      </node>
+      <node id="战略防御" label="战略防御">
+        <attvalues>
+          <attvalue for="0" value="130" />
+        </attvalues>
+      </node>
+      <node id="农会" label="农会">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="革命" label="革命">
+        <attvalues>
+          <attvalue for="0" value="3282" />
+        </attvalues>
+      </node>
+      <node id="阵地战" label="阵地战">
+        <attvalues>
+          <attvalue for="0" value="109" />
+        </attvalues>
+      </node>
+      <node id="斗争" label="斗争">
+        <attvalues>
+          <attvalue for="0" value="1134" />
+        </attvalues>
+      </node>
+      <node id="到群众中去" label="到群众中去">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="错误" label="错误">
+        <attvalues>
+          <attvalue for="0" value="798" />
+        </attvalues>
+      </node>
+      <node id="纲领" label="纲领">
+        <attvalues>
+          <attvalue for="0" value="274" />
+        </attvalues>
+      </node>
+      <node id="集中起来" label="集中起来">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="组织" label="组织">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="第二次国内革命战争" label="第二次国内革命战争">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="主观主义" label="主观主义">
+        <attvalues>
+          <attvalue for="0" value="85" />
+        </attvalues>
+      </node>
+      <node id="社会主义" label="社会主义">
+        <attvalues>
+          <attvalue for="0" value="434" />
+        </attvalues>
+      </node>
+      <node id="团结" label="团结">
+        <attvalues>
+          <attvalue for="0" value="573" />
+        </attvalues>
+      </node>
+      <node id="统筹兼顾" label="统筹兼顾">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="方针" label="方针">
+        <attvalues>
+          <attvalue for="0" value="536" />
+        </attvalues>
+      </node>
+      <node id="群众路线" label="群众路线">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="原则" label="原则">
+        <attvalues>
+          <attvalue for="0" value="549" />
+        </attvalues>
+      </node>
+      <node id="游击战" label="游击战">
+        <attvalues>
+          <attvalue for="0" value="136" />
+        </attvalues>
+      </node>
+      <node id="教条主义" label="教条主义">
+        <attvalues>
+          <attvalue for="0" value="96" />
+        </attvalues>
+      </node>
+      <node id="计划" label="计划">
+        <attvalues>
+          <attvalue for="0" value="356" />
+        </attvalues>
+      </node>
+      <node id="任务" label="任务">
+        <attvalues>
+          <attvalue for="0" value="702" />
+        </attvalues>
+      </node>
+      <node id="困难" label="困难">
+        <attvalues>
+          <attvalue for="0" value="282" />
+        </attvalues>
+      </node>
+      <node id="农民" label="农民">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="小资产阶级" label="小资产阶级">
+        <attvalues>
+          <attvalue for="0" value="298" />
+        </attvalues>
+      </node>
+      <node id="考察报告" label="考察报告">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="实践论" label="实践论">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="干部" label="干部">
+        <attvalues>
+          <attvalue for="0" value="433" />
+        </attvalues>
+      </node>
+      <node id="我们" label="我们">
+        <attvalues>
+          <attvalue for="0" value="4253" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="群众" target="同志" id="0" weight="2" />
+      <edge source="群众" target="人民" id="1" weight="5" />
+      <edge source="群众" target="领导" id="2" weight="4" />
+      <edge source="群众" target="党" id="3" weight="2" />
+      <edge source="群众" target="集中起来" id="4" weight="2" />
+      <edge source="群众" target="坚持下去" id="5" weight="2" />
+      <edge source="群众" target="调查研究" id="6" weight="3" />
+      <edge source="群众" target="群众路线" id="7" weight="2" />
+      <edge source="群众" target="正确" id="8" weight="2" />
+      <edge source="群众" target="革命" id="9" weight="5" />
+      <edge source="群众" target="敌人" id="10" weight="2" />
+      <edge source="群众" target="斗争" id="11" weight="5" />
+      <edge source="群众" target="他们" id="12" weight="5" />
+      <edge source="群众" target="你们" id="13" weight="2" />
+      <edge source="群众" target="胜利" id="14" weight="2" />
+      <edge source="群众" target="政策" id="15" weight="2" />
+      <edge source="群众" target="我们" id="16" weight="2" />
+      <edge source="经验" target="人民" id="17" weight="4" />
+      <edge source="经验" target="正确" id="18" weight="3" />
+      <edge source="经验" target="革命" id="19" weight="5" />
+      <edge source="经验" target="失败" id="20" weight="3" />
+      <edge source="经验" target="敌人" id="21" weight="3" />
+      <edge source="经验" target="斗争" id="22" weight="3" />
+      <edge source="经验" target="他们" id="23" weight="5" />
+      <edge source="经验" target="我们" id="24" weight="5" />
+      <edge source="经验" target="胜利" id="25" weight="5" />
+      <edge source="经验" target="原则" id="26" weight="3" />
+      <edge source="经验" target="军队" id="27" weight="3" />
+      <edge source="军队" target="人民" id="28" weight="5" />
+      <edge source="军队" target="革命" id="29" weight="5" />
+      <edge source="军队" target="失败" id="30" weight="3" />
+      <edge source="军队" target="敌人" id="31" weight="5" />
+      <edge source="军队" target="他们" id="32" weight="5" />
+      <edge source="军队" target="我们" id="33" weight="5" />
+      <edge source="军队" target="资产阶级" id="34" weight="2" />
+      <edge source="军队" target="胜利" id="35" weight="4" />
+      <edge source="军队" target="原则" id="36" weight="3" />
+      <edge source="军队" target="政策" id="37" weight="2" />
+      <edge source="国家" target="人民" id="38" weight="3" />
+      <edge source="国家" target="领导" id="39" weight="2" />
+      <edge source="国家" target="革命" id="40" weight="2" />
+      <edge source="国家" target="社会主义" id="41" weight="2" />
+      <edge source="国家" target="我们" id="42" weight="4" />
+      <edge source="国家" target="资产阶级" id="43" weight="2" />
+      <edge source="国家" target="无产阶级" id="44" weight="2" />
+      <edge source="国家" target="统一战线" id="45" weight="2" />
+      <edge source="国家" target="新民主主义" id="46" weight="2" />
+      <edge source="国家" target="路线" id="47" weight="2" />
+      <edge source="敌人" target="人民" id="48" weight="7" />
+      <edge source="敌人" target="党" id="49" weight="2" />
+      <edge source="敌人" target="革命" id="50" weight="7" />
+      <edge source="敌人" target="失败" id="51" weight="4" />
+      <edge source="敌人" target="斗争" id="52" weight="3" />
+      <edge source="敌人" target="他们" id="53" weight="7" />
+      <edge source="敌人" target="我们" id="54" weight="6" />
+      <edge source="敌人" target="胜利" id="55" weight="4" />
+      <edge source="敌人" target="原则" id="56" weight="3" />
+      <edge source="敌人" target="资产阶级" id="57" weight="3" />
+      <edge source="敌人" target="政策" id="58" weight="2" />
+      <edge source="领导" target="同志" id="59" weight="3" />
+      <edge source="领导" target="人民" id="60" weight="7" />
+      <edge source="领导" target="为人民服务" id="61" weight="2" />
+      <edge source="领导" target="方法论" id="62" weight="2" />
+      <edge source="领导" target="革命" id="63" weight="6" />
+      <edge source="领导" target="我们" id="64" weight="5" />
+      <edge source="领导" target="资产阶级" id="65" weight="2" />
+      <edge source="领导" target="斗争" id="66" weight="4" />
+      <edge source="领导" target="无产阶级" id="67" weight="2" />
+      <edge source="领导" target="正确" id="68" weight="2" />
+      <edge source="领导" target="社会主义" id="69" weight="2" />
+      <edge source="领导" target="新民主主义" id="70" weight="2" />
+      <edge source="领导" target="统一战线" id="71" weight="2" />
+      <edge source="领导" target="他们" id="72" weight="4" />
+      <edge source="领导" target="你们" id="73" weight="2" />
+      <edge source="领导" target="胜利" id="74" weight="2" />
+      <edge source="领导" target="政策" id="75" weight="3" />
+      <edge source="领导" target="调查研究" id="76" weight="2" />
+      <edge source="你们" target="人民" id="77" weight="3" />
+      <edge source="你们" target="调查研究" id="78" weight="2" />
+      <edge source="你们" target="革命" id="79" weight="2" />
+      <edge source="你们" target="斗争" id="80" weight="2" />
+      <edge source="你们" target="他们" id="81" weight="2" />
+      <edge source="你们" target="胜利" id="82" weight="3" />
+      <edge source="你们" target="政策" id="83" weight="2" />
+      <edge source="同志" target="人民" id="84" weight="6" />
+      <edge source="同志" target="为人民服务" id="85" weight="2" />
+      <edge source="同志" target="方法论" id="86" weight="3" />
+      <edge source="同志" target="革命" id="87" weight="4" />
+      <edge source="同志" target="斗争" id="88" weight="3" />
+      <edge source="同志" target="困难" id="89" weight="2" />
+      <edge source="同志" target="他们" id="90" weight="2" />
+      <edge source="同志" target="党" id="91" weight="2" />
+      <edge source="同志" target="我们" id="92" weight="4" />
+      <edge source="资产阶级" target="人民" id="93" weight="5" />
+      <edge source="资产阶级" target="革命" id="94" weight="5" />
+      <edge source="资产阶级" target="斗争" id="95" weight="3" />
+      <edge source="资产阶级" target="他们" id="96" weight="4" />
+      <edge source="资产阶级" target="社会主义" id="97" weight="3" />
+      <edge source="资产阶级" target="我们" id="98" weight="6" />
+      <edge source="资产阶级" target="无产阶级" id="99" weight="3" />
+      <edge source="资产阶级" target="政策" id="100" weight="2" />
+      <edge source="资产阶级" target="统一战线" id="101" weight="2" />
+      <edge source="资产阶级" target="胜利" id="102" weight="2" />
+      <edge source="为人民服务" target="人民" id="103" weight="2" />
+      <edge source="认识论" target="党" id="104" weight="2" />
+      <edge source="认识论" target="正确" id="105" weight="3" />
+      <edge source="认识论" target="斗争" id="106" weight="2" />
+      <edge source="认识论" target="我们" id="107" weight="2" />
+      <edge source="认识论" target="错误" id="108" weight="2" />
+      <edge source="统一战线" target="人民" id="109" weight="2" />
+      <edge source="统一战线" target="革命" id="110" weight="2" />
+      <edge source="统一战线" target="他们" id="111" weight="2" />
+      <edge source="统一战线" target="我们" id="112" weight="3" />
+      <edge source="统一战线" target="政策" id="113" weight="2" />
+      <edge source="统一战线" target="新民主主义" id="114" weight="2" />
+      <edge source="党" target="人民" id="115" weight="3" />
+      <edge source="党" target="正确" id="116" weight="2" />
+      <edge source="党" target="革命" id="117" weight="2" />
+      <edge source="党" target="斗争" id="118" weight="3" />
+      <edge source="党" target="他们" id="119" weight="2" />
+      <edge source="党" target="我们" id="120" weight="2" />
+      <edge source="政策" target="人民" id="121" weight="5" />
+      <edge source="政策" target="调查研究" id="122" weight="3" />
+      <edge source="政策" target="革命" id="123" weight="5" />
+      <edge source="政策" target="斗争" id="124" weight="4" />
+      <edge source="政策" target="他们" id="125" weight="5" />
+      <edge source="政策" target="我们" id="126" weight="3" />
+      <edge source="政策" target="胜利" id="127" weight="4" />
+      <edge source="政策" target="建设" id="128" weight="2" />
+      <edge source="胜利" target="人民" id="129" weight="7" />
+      <edge source="胜利" target="调查研究" id="130" weight="3" />
+      <edge source="胜利" target="革命" id="131" weight="7" />
+      <edge source="胜利" target="失败" id="132" weight="3" />
+      <edge source="胜利" target="斗争" id="133" weight="3" />
+      <edge source="胜利" target="他们" id="134" weight="7" />
+      <edge source="胜利" target="我们" id="135" weight="5" />
+      <edge source="胜利" target="原则" id="136" weight="3" />
+      <edge source="他们" target="人民" id="137" weight="10" />
+      <edge source="他们" target="方法论" id="138" weight="2" />
+      <edge source="他们" target="调查研究" id="139" weight="3" />
+      <edge source="他们" target="正确" id="140" weight="2" />
+      <edge source="他们" target="革命" id="141" weight="13" />
+      <edge source="他们" target="失败" id="142" weight="4" />
+      <edge source="他们" target="斗争" id="143" weight="7" />
+      <edge source="他们" target="我们" id="144" weight="9" />
+      <edge source="他们" target="原则" id="145" weight="3" />
+      <edge source="他们" target="无产阶级" id="146" weight="2" />
+      <edge source="新民主主义" target="我们" id="147" weight="2" />
+      <edge source="正确" target="人民" id="148" weight="2" />
+      <edge source="正确" target="集中起来" id="149" weight="2" />
+      <edge source="正确" target="坚持下去" id="150" weight="2" />
+      <edge source="正确" target="调查研究" id="151" weight="2" />
+      <edge source="正确" target="革命" id="152" weight="3" />
+      <edge source="正确" target="斗争" id="153" weight="5" />
+      <edge source="正确" target="我们" id="154" weight="3" />
+      <edge source="正确" target="错误" id="155" weight="2" />
+      <edge source="正确" target="社会主义" id="156" weight="2" />
+      <edge source="失败" target="人民" id="157" weight="4" />
+      <edge source="失败" target="革命" id="158" weight="4" />
+      <edge source="失败" target="我们" id="159" weight="3" />
+      <edge source="失败" target="原则" id="160" weight="3" />
+      <edge source="人民民主专政" target="人民" id="161" weight="2" />
+      <edge source="方法论" target="人民" id="162" weight="4" />
+      <edge source="方法论" target="我们" id="163" weight="3" />
+      <edge source="方法论" target="革命" id="164" weight="3" />
+      <edge source="方法论" target="斗争" id="165" weight="2" />
+      <edge source="坚持下去" target="集中起来" id="166" weight="2" />
+      <edge source="无产阶级" target="人民" id="167" weight="3" />
+      <edge source="无产阶级" target="革命" id="168" weight="4" />
+      <edge source="无产阶级" target="斗争" id="169" weight="3" />
+      <edge source="无产阶级" target="社会主义" id="170" weight="2" />
+      <edge source="无产阶级" target="我们" id="171" weight="4" />
+      <edge source="湖南" target="考察报告" id="172" weight="2" />
+      <edge source="湖南" target="农民" id="173" weight="2" />
+      <edge source="路线" target="人民" id="174" weight="2" />
+      <edge source="路线" target="我们" id="175" weight="2" />
+      <edge source="调查研究" target="人民" id="176" weight="2" />
+      <edge source="调查研究" target="革命" id="177" weight="3" />
+      <edge source="调查研究" target="斗争" id="178" weight="3" />
+      <edge source="人民" target="革命" id="179" weight="13" />
+      <edge source="人民" target="斗争" id="180" weight="8" />
+      <edge source="人民" target="困难" id="181" weight="2" />
+      <edge source="人民" target="社会主义" id="182" weight="4" />
+      <edge source="人民" target="我们" id="183" weight="14" />
+      <edge source="人民" target="错误" id="184" weight="2" />
+      <edge source="人民" target="原则" id="185" weight="3" />
+      <edge source="人民" target="团结" id="186" weight="3" />
+      <edge source="革命" target="斗争" id="187" weight="9" />
+      <edge source="革命" target="困难" id="188" weight="2" />
+      <edge source="革命" target="我们" id="189" weight="12" />
+      <edge source="革命" target="社会主义" id="190" weight="2" />
+      <edge source="革命" target="原则" id="191" weight="3" />
+      <edge source="斗争" target="我们" id="192" weight="6" />
+      <edge source="斗争" target="错误" id="193" weight="2" />
+      <edge source="斗争" target="社会主义" id="194" weight="2" />
+      <edge source="斗争" target="团结" id="195" weight="2" />
+      <edge source="错误" target="社会主义" id="196" weight="2" />
+      <edge source="错误" target="我们" id="197" weight="3" />
+      <edge source="社会主义" target="我们" id="198" weight="5" />
+      <edge source="团结" target="我们" id="199" weight="3" />
+      <edge source="原则" target="我们" id="200" weight="3" />
+      <edge source="农民" target="考察报告" id="201" weight="2" />
+    </edges>
+  </graph>
+</gexf>
