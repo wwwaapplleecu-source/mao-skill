@@ -19,8 +19,8 @@
 |----------|--------|------|
 | **中文** (Chinese) | 📘 **当前页面** | 主README文件 |
 | **English** (English) | [README.en.md](README.en.md) | English README |
-| **日本語** (Japanese) | [README.ja.md](README.ja.md) | 日本語README |
-| **한국어** (Korean) | [README.ko.md](README.ko.md) | 한국어README |
+| **日本�?* (Japanese) | [README.ja.md](README.ja.md) | 日本語README |
+| **한국�?* (Korean) | [README.ko.md](README.ko.md) | 한국어README |
 | **Deutsch** (German) | [README.de.md](README.de.md) | Deutsche README |
 | **Español** (Spanish) | [README.es.md](README.es.md) | README en español |
 
@@ -483,7 +483,7 @@ mao-colleague/ (完整的Skill)
 3. **Concept Query**: 674 Mao Zedong core concepts
 4. **Six-Layer Architecture**: Modern cognitive architecture design
 
-### 🎯 快速导�?| Quick Navigation
+### 🎯 快速导航 | Quick Navigation
 | Language | Install | Usage | Learn | Concepts | 完整文档 |
 |----------|---------|-------|-------|----------|----------|
 | **中文** | [📦 安装](#安装与快速开�? | [🚀 使用](#使用方法) | [📚 学习](#学习系统) | [🔍 概念](#概念查询系统) | [📘 详细指南](../docs/user/getting_started.md) |
@@ -537,6 +537,8 @@ MIT License © [Abner](https://github.com/wwwaapplleecu-source) | 基于现代�
 **智慧传承 · 方法永存 · 实践为先**
 
 </div>
+
+
 
 
 
