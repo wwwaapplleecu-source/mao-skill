@@ -45,17 +45,6 @@ logs/
 config.local.json
 settings.local.json
 
-# 个人工作记录和记忆文件
+# 个人工作记录和记忆文件（不公开）
 MEMORY.md
 memory/
-
-# 个人测试和反馈数据（可能包含敏感信息）
-docs/testing/feedback_questionnaire.md
-docs/testing/user_feedback_form.md
-docs/testing/user_test_cases.md
-docs/testing/test_instructions.md
-docs/testing/test_tasks.md
-docs/testing/user_test_plan.md
-
-# 日常进度报告（可能包含工作细节）
-docs/daily/
