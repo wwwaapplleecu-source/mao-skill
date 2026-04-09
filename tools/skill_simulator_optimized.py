@@ -162,7 +162,7 @@ class MaoSkillSimulatorOptimized:
             question_type = "错误前提处理"
         
         # 3. 超出范围处理（明显与毛泽东方法论无关的日常问题）
-        elif any(keyword in question_lower for keyword in ["意大利面", "做饭", "烹饪", "美食", "游戏", "娱乐", "旅游"]):
+        elif any(keyword in question_lower for keyword in ["意大利面", "做饭", "烹饪", "美食", "游戏", "娱乐", "旅游", "天气", "电影", "音乐", "体育"]):
             question_type = "超出范围处理"
             
         # 4. 价值观澄清（已经有的"操纵员工"测试）
