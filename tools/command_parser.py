@@ -39,6 +39,11 @@ class MaoCommandParser:
                 'description': '毛泽东方法论渐进式学习',
                 'subcommands': {
                     '': '开始学习（智能推荐路径）',
+                    'progress': '查看学习进度',
+                    'recommendations': '获取学习推荐',
+                    'start': '开始新的学习路径',
+                    'next': '继续下一个学习模块',
+                    'complete': '完成当前学习模块',
                     '矛盾论': '学习矛盾论专题',
                     '实践论': '学习实践论专题',
                     '战略思维': '学习战略思维专题',
@@ -90,6 +95,9 @@ class MaoCommandParser:
         
         # 支持的学习路径
         self.supported_paths = ['入门', '基础', '进阶', '专业']
+        
+        # 学习命令的特殊子命令
+        self.learn_special_subcommands = ['progress', 'recommendations', 'start', 'next', 'complete']
         
     def parse(self, command_text: str) -> Dict[str, Any]:
         """
@@ -278,7 +286,8 @@ class MaoCommandParser:
             'command': 'learn',
             'subcommand': '',
             'path': 'auto',  # 默认智能推荐
-            'topic': None
+            'topic': None,
+            'special_action': None  # progress, recommendations, start, next, complete
         }
         
         i = 0
@@ -304,9 +313,17 @@ class MaoCommandParser:
                 else:
                     return self._error_result(f'未知选项: --{key}')
             else:
-                # 学习主题
+                # 学习子命令或主题
                 result['subcommand'] = arg
-                result['topic'] = ' '.join(args[i:])
+                
+                # 检查是否为特殊子命令
+                if arg in self.learn_special_subcommands:
+                    result['special_action'] = arg
+                    result['topic'] = None
+                else:
+                    # 普通学习主题
+                    result['topic'] = ' '.join(args[i:])
+                
                 break
             
             i += 1

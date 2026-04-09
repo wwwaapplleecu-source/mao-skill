@@ -11,7 +11,6 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from command_parser import MaoCommandParser
 from smart_recommender import SmartRecommender
-from learning_system import LearningSystem
 
 class MaoSkillIntegration:
     """毛泽东.skill集成系统"""
@@ -20,7 +19,6 @@ class MaoSkillIntegration:
         """初始化集成系统"""
         self.parser = MaoCommandParser()
         self.recommender = SmartRecommender()
-        self.learning_system = LearningSystem()
         
         # 模拟的知识库响应
         self.knowledge_base = {
@@ -154,163 +152,86 @@ class MaoSkillIntegration:
     
     def _process_learn(self, parsed: dict) -> str:
         """处理学习命令"""
-        special_action = parsed.get('special_action')
         topic = parsed.get('topic', '')
         path = parsed.get('path', 'auto')
-        subcommand = parsed.get('subcommand', '')
         
-        # 默认用户ID（实际应用中应该使用真实用户ID）
-        user_id = "default_user"
-        
-        # 处理特殊动作
-        if special_action:
-            if special_action == 'progress':
-                return self.learning_system.format_user_progress(user_id)
+        if not topic:
+            # 默认学习引导
+            response = "## 🎓 毛泽东方法论学习系统\n\n"
+            response += "欢迎使用毛泽东方法论学习系统！\n\n"
             
-            elif special_action == 'recommendations':
-                recommendations = self.learning_system.get_learning_recommendations(user_id)
-                response = "## 💡 学习推荐\n\n"
+            if path == 'auto':
+                response += "🎯 **推荐学习路径**: 入门 → 基础 → 进阶 → 专业\n\n"
+                response += "### 快速开始\n"
+                response += "1. **入门路径** (15分钟): `/mao learn --path=入门`\n"
+                response += "2. **基础路径** (1小时): `/mao learn --path=基础`\n"
+                response += "3. **专题学习**: `/mao learn 矛盾论`\n\n"
                 
-                if not recommendations:
-                    response += "暂时没有推荐。建议先开始一个学习路径！\n\n"
-                    response += "**推荐命令**: `/mao learn --path=入门`\n"
-                else:
-                    for rec in recommendations:
-                        priority_icon = "🔴" if rec['priority'] == 'high' else "🟡" if rec['priority'] == 'medium' else "🟢"
-                        response += f"{priority_icon} **{rec['reason']}**\n"
-                        if rec['type'] == 'start_path':
-                            response += f"   命令: `/mao learn --path={rec['path_id']}`\n"
-                        elif rec['type'] == 'topic':
-                            response += f"   命令: `/mao learn {rec['topic_id']}`\n"
-                        response += "\n"
-                
-                return response
-            
-            elif special_action == 'start':
-                # 开始学习路径
-                if path == 'auto':
-                    # 默认推荐入门路径
-                    path = '入门'
-                
-                result = self.learning_system.start_learning_path(user_id, path)
-                if 'error' in result:
-                    return f"❌ 开始学习路径失败: {result['error']}"
-                
-                response = f"## 🚀 开始学习: {result['path_name']}\n\n"
-                response += f"**总模块数**: {result['total_modules']}个\n\n"
-                
-                # 显示第一个模块内容
-                module = result['module']
-                response += self.learning_system.format_module_content(module)
-                
-                response += "\n\n### 📝 下一步\n"
-                response += "完成此模块后，使用: `/mao learn next` 继续学习\n"
-                
-                return response
-            
-            elif special_action == 'next':
-                # 继续下一个模块
-                current_module = self.learning_system.get_current_module(user_id)
-                if not current_module:
-                    return "❌ 没有正在进行的学习路径。请先开始一个学习路径: `/mao learn --path=入门`"
-                
-                # 完成当前模块
-                result = self.learning_system.complete_current_module(user_id, "")
-                if 'error' in result:
-                    return f"❌ 完成模块失败: {result['error']}"
-                
-                response = f"## ✅ 模块完成: {result.get('completed_module', '')}\n\n"
-                
-                if 'achievement' in result:
-                    achievement = result['achievement']
-                    response += f"🏆 **成就解锁**: {achievement['name']}\n"
-                    response += f"   {achievement['description']}\n"
-                    response += f"   🎁 奖励: {achievement['reward']}\n\n"
-                
-                if 'next_module' in result:
-                    next_info = result['next_module']
-                    response += f"**下一个模块**: {next_info['title']} ({next_info['index']}/{next_info['total']})\n"
-                    response += f"**总体进度**: {result['progress_percentage']}%\n\n"
-                    
-                    # 获取下一个模块内容
-                    next_module = self.learning_system.get_current_module(user_id)
-                    if next_module:
-                        response += self.learning_system.format_module_content(next_module['module'])
-                else:
-                    response += "🎉 恭喜！您已完成当前学习路径的所有模块！\n\n"
-                    response += "### 🏆 学习成就\n"
-                    progress = self.learning_system.get_user_progress(user_id)
-                    response += f"**已完成路径**: {progress['achievements_count']}个\n"
-                    response += f"**建议下一步**: `/mao learn recommendations`\n"
-                
-                return response
-            
-            elif special_action == 'complete':
-                # 完成当前模块（带实践回答）
-                current_module = self.learning_system.get_current_module(user_id)
-                if not current_module:
-                    return "❌ 没有正在进行的学习路径。"
-                
-                # 提取实践问题（如果有）
-                practice_question = ""
-                module = current_module['module']
-                if 'practice_question' in module:
-                    practice_question = module['practice_question']
-                
-                if practice_question:
-                    response = "## 📝 完成当前模块\n\n"
-                    response += f"**实践问题**: {practice_question}\n\n"
-                    response += "💡 请提交您的实践回答，然后使用: `/mao learn next` 继续\n"
-                else:
-                    response = "✅ 当前模块没有实践问题。使用 `/mao learn next` 继续学习。\n"
-                
-                return response
-        
-        # 处理专题学习
-        if topic:
-            # 检查是否为已知专题
-            topic_details = self.learning_system.get_topic_details(topic)
-            if topic_details:
-                response = f"## 📖 {topic_details['name']}\n\n"
-                response += f"**描述**: {topic_details['description']}\n\n"
-                
-                if 'content' in topic_details:
-                    content = topic_details['content']
-                    if 'theory' in content:
-                        response += "### 理论内容\n"
-                        response += f"{content['theory']}\n\n"
-                    if 'applications' in content:
-                        response += "### 应用场景\n"
-                        for app in content['applications']:
-                            response += f"- {app}\n"
-                        response += "\n"
-                    if 'key_concepts' in content:
-                        response += "### 核心概念\n"
-                        for concept in content['key_concepts']:
-                            response += f"- **{concept}**\n"
-                
-                response += "\n### 🚀 开始学习\n"
-                response += f"**前置要求**: {', '.join(topic_details.get('prerequisites', ['无']))}\n"
-                response += f"**相关命令**: `/mao learn --path={topic_details.get('prerequisites', ['基础'])[0]}`\n"
-                
-                return response
+                response += "### 核心方法论\n"
+                response += "- **矛盾分析法**: 识别和分析矛盾\n"
+                response += "- **实践论方法**: 实践-认识循环\n"
+                response += "- **调查研究法**: 深入实际了解情况\n"
+                response += "- **战略思维法**: 长远规划和策略\n"
+                response += "- **群众路线法**: 从群众中来，到群众中去\n"
             else:
-                # 未知专题，使用原来的简单响应
-                response = f"## 📖 {topic} 专题学习\n\n"
-                response += f"正在开发 {topic} 专题内容...\n\n"
-                response += "💡 您可以先学习其他专题:\n"
-                response += "- `/mao learn 矛盾论`\n"
-                response += "- `/mao learn 实践论`\n"
-                response += "- `/mao learn 战略思维`\n"
-                return response
+                response += f"📚 **学习路径**: {path}\n\n"
+                
+                if path == '入门':
+                    response += "### 入门学习内容 (15分钟)\n"
+                    response += "1. 毛泽东方法论概述\n"
+                    response += "2. 矛盾分析法基础\n"
+                    response += "3. 实践论方法基础\n"
+                    response += "4. 快速应用示例\n"
+                elif path == '基础':
+                    response += "### 基础学习内容 (1小时)\n"
+                    response += "1. 完整方法论体系\n"
+                    response += "2. 方法应用技巧\n"
+                    response += "3. 案例分析\n"
+                    response += "4. 实践练习\n"
+            
+            return response
         
-        # 默认情况：学习系统介绍
-        if path != 'auto':
-            # 显示学习路径详情
-            return self.learning_system.format_path_details(path)
+        # 专题学习
+        response = f"## 📖 {topic} 专题学习\n\n"
+        
+        if topic == '矛盾论':
+            response += "### 矛盾论核心内容\n\n"
+            response += "**核心思想**: 对立统一规律\n\n"
+            response += "**主要观点**:\n"
+            response += "1. 矛盾存在于一切事物的发展过程中\n"
+            response += "2. 每一事物的发展过程中存在着自始至终的矛盾运动\n"
+            response += "3. 矛盾有主要矛盾和次要矛盾之分\n"
+            response += "4. 矛盾双方既对立又统一，相互转化\n\n"
+            
+            response += "**应用方法**:\n"
+            response += "1. 识别问题中的各种矛盾\n"
+            response += "2. 区分主要矛盾和次要矛盾\n"
+            response += "3. 分析矛盾双方的关系\n"
+            response += "4. 促进矛盾向有利方向转化\n"
+        
+        elif topic == '实践论':
+            response += "### 实践论核心内容\n\n"
+            response += "**核心思想**: 实践-认识-再实践-再认识循环\n\n"
+            response += "**主要观点**:\n"
+            response += "1. 实践是认识的来源\n"
+            response += "2. 实践是认识发展的动力\n"
+            response += "3. 实践是检验真理的标准\n"
+            response += "4. 认识是一个辩证发展过程\n\n"
+            
+            response += "**应用方法**:\n"
+            response += "1. 通过实践获取感性认识\n"
+            response += "2. 总结提升为理性认识\n"
+            response += "3. 用理性认识指导新的实践\n"
+            response += "4. 循环往复，不断完善\n"
+        
         else:
-            # 显示学习系统总体介绍
-            return self.learning_system.format_learning_introduction()
+            response += f"正在开发 {topic} 专题内容...\n\n"
+            response += "💡 您可以先学习其他专题:\n"
+            response += "- `/mao learn 矛盾论`\n"
+            response += "- `/mao learn 实践论`\n"
+            response += "- `/mao learn 战略思维`\n"
+        
+        return response
     
     def _process_concepts(self, parsed: dict) -> str:
         """处理概念命令"""
