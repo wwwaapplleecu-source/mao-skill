@@ -1,11 +1,11 @@
 {
   "name": "mao",
   "displayName": "毛泽东",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "基于毛泽东著作的方法论体系和表达风格构建的AI Skill",
   "author": "OpenClaw AI",
   "createdAt": "2026-04-08",
-  "updatedAt": "2026-04-08",
+  "updatedAt": "2026-04-09",
   "tags": ["strategy", "philosophy", "leadership", "analysis", "chinese"],
   "files": {
     "work": "work.md",
@@ -50,7 +50,7 @@
       "volumes": [1, 2, 3, 4]
     }
   ],
-  "architecture": "work_skill_plus_persona",
+  "architecture": "six-layer-cognitive-architecture (backward compatible)",
   "compatibility": "colleague-skill-1.0",
   "license": "CC-BY-NC-4.0",
   "notes": "本Skill专注于毛泽东的方法论和表达风格提取，不涉及历史评价和政治立场。"
