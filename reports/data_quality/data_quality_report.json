@@ -1,0 +1,387 @@
+{
+  "summary": {
+    "scan_time": "mao-colleague",
+    "total_files": 19,
+    "files_analyzed": 8,
+    "average_completeness_score": 74.9,
+    "files_by_score_range": {
+      "excellent_90_100": 0,
+      "good_70_89": 7,
+      "fair_50_69": 1,
+      "poor_0_49": 11
+    },
+    "common_issues": [
+      [
+        "分析错误: nothing to repeat at position 0",
+        11
+      ],
+      [
+        "概念提取失败",
+        8
+      ]
+    ],
+    "recommendations": [
+      "数据质量中等，建议补充关键著作内容"
+    ]
+  },
+  "details": {
+    "annotations\\哲学批注摘录.md": {
+      "file_path": "annotations\\哲学批注摘录.md",
+      "file_size": 2798,
+      "character_count": 1019,
+      "line_count": 45,
+      "section_count": 9,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "letters\\致徐特立同志的信.md": {
+      "file_path": "letters\\致徐特立同志的信.md",
+      "file_size": 1790,
+      "character_count": 612,
+      "line_count": 14,
+      "section_count": 1,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "methodology\\关于正确处理人民内部矛盾的问题.md": {
+      "file_path": "methodology\\关于正确处理人民内部矛盾的问题.md",
+      "file_size": 5576,
+      "character_count": 2094,
+      "line_count": 106,
+      "section_count": 14,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 70,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "内容基本完整，可优化格式"
+      ]
+    },
+    "methodology\\实践论.md": {
+      "file_path": "methodology\\实践论.md",
+      "file_size": 28859,
+      "character_count": 9809,
+      "line_count": 89,
+      "section_count": 2,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "methodology\\矛盾论.md": {
+      "file_path": "methodology\\矛盾论.md",
+      "file_size": 83661,
+      "character_count": 28379,
+      "line_count": 315,
+      "section_count": 1,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "military\\中国革命战争的战略问题.md": {
+      "file_path": "military\\中国革命战争的战略问题.md",
+      "file_size": 146661,
+      "character_count": 49595,
+      "line_count": 400,
+      "section_count": 13,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 80,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "内容基本完整，可优化格式"
+      ]
+    },
+    "military\\论持久战.md": {
+      "file_path": "military\\论持久战.md",
+      "file_size": 840812,
+      "character_count": 294514,
+      "line_count": 5370,
+      "section_count": 158,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "philosophy\\关于自由与必然的思考.md": {
+      "file_path": "philosophy\\关于自由与必然的思考.md",
+      "file_size": 3850,
+      "character_count": 1306,
+      "line_count": 24,
+      "section_count": 5,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "selected_works\\新民主主义论.md": {
+      "file_path": "selected_works\\新民主主义论.md",
+      "file_size": 11455,
+      "character_count": 4085,
+      "line_count": 128,
+      "section_count": 16,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 80,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "内容基本完整，可优化格式"
+      ]
+    },
+    "selected_works\\毛泽东选集全卷.md": {
+      "file_path": "selected_works\\毛泽东选集全卷.md",
+      "file_size": 2226542,
+      "character_count": 797912,
+      "line_count": 17182,
+      "section_count": 86,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "selected_works\\湖南农民运动考察报告.md": {
+      "file_path": "selected_works\\湖南农民运动考察报告.md",
+      "file_size": 44344,
+      "character_count": 15131,
+      "line_count": 159,
+      "section_count": 17,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 80,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "内容基本完整，可优化格式"
+      ]
+    },
+    "selected_works\\论人民民主专政.md": {
+      "file_path": "selected_works\\论人民民主专政.md",
+      "file_size": 5343,
+      "character_count": 2013,
+      "line_count": 84,
+      "section_count": 11,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 70,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "内容基本完整，可优化格式"
+      ]
+    },
+    "selected_works\\论联合政府.md": {
+      "file_path": "selected_works\\论联合政府.md",
+      "file_size": 10481,
+      "character_count": 3757,
+      "line_count": 134,
+      "section_count": 18,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 80,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "内容基本完整，可优化格式"
+      ]
+    },
+    "speeches\\为人民服务.md": {
+      "file_path": "speeches\\为人民服务.md",
+      "file_size": 2378,
+      "character_count": 804,
+      "line_count": 14,
+      "section_count": 1,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "speeches\\在延安文艺座谈会上的讲话（节选）.md": {
+      "file_path": "speeches\\在延安文艺座谈会上的讲话（节选）.md",
+      "file_size": 4962,
+      "character_count": 1686,
+      "line_count": 40,
+      "section_count": 7,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "speeches\\纪念白求恩.md": {
+      "file_path": "speeches\\纪念白求恩.md",
+      "file_size": 5649,
+      "character_count": 2070,
+      "line_count": 64,
+      "section_count": 6,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 70,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "内容基本完整，可优化格式"
+      ]
+    },
+    "work_methods\\关于领导方法的若干问题.md": {
+      "file_path": "work_methods\\关于领导方法的若干问题.md",
+      "file_size": 5485,
+      "character_count": 1851,
+      "line_count": 28,
+      "section_count": 5,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": false,
+      "has_category": false,
+      "has_content_intro": false,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    },
+    "work_methods\\关心群众生活，注意工作方法.md": {
+      "file_path": "work_methods\\关心群众生活，注意工作方法.md",
+      "file_size": 5192,
+      "character_count": 1928,
+      "line_count": 68,
+      "section_count": 6,
+      "concept_count": 0,
+      "has_completeness_mark": true,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 10,
+      "completeness_score": 69,
+      "issues": [
+        "概念提取失败"
+      ],
+      "suggestions": [
+        "建议补充部分内容"
+      ]
+    },
+    "著作内容贡献指南.md": {
+      "file_path": "著作内容贡献指南.md",
+      "file_size": 7807,
+      "character_count": 4026,
+      "line_count": 264,
+      "section_count": 53,
+      "concept_count": 0,
+      "has_completeness_mark": false,
+      "has_author_info": true,
+      "has_category": true,
+      "has_content_intro": true,
+      "format_score": 0,
+      "completeness_score": 0,
+      "issues": [
+        "分析错误: nothing to repeat at position 0"
+      ],
+      "suggestions": []
+    }
+  }
+}
