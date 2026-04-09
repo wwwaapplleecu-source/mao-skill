@@ -1,0 +1,280 @@
+{
+  "timestamp": "20260409_141338",
+  "simulator_version": "optimized",
+  "total_tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "errors": 0,
+  "results": [
+    {
+      "category": "方法论测试",
+      "name": "矛盾论方法测试",
+      "input": "分析当前项目的主要矛盾",
+      "response": "实践证明， 研究当前项目，就要分析其内部矛盾。主要矛盾决定事物的性质，次要矛盾影响事物的发展。抓住主要矛盾，问题就迎刃而解。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "主要矛盾",
+          "次要矛盾",
+          "分析",
+          "抓住"
+        ],
+        "missing_keywords": [],
+        "response_length": 62,
+        "methodology_keywords_found": 4
+      }
+    },
+    {
+      "category": "方法论测试",
+      "name": "实践论方法测试",
+      "input": "如何开展用户调研",
+      "response": "总而言之， 如何开展用户调研？首先要调查研究。没有调查就没有发言权。要深入用户，了解需求，掌握第一手材料。调查是基础，研究是关键。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "调查",
+          "研究",
+          "没有调查",
+          "发言权"
+        ],
+        "missing_keywords": [],
+        "response_length": 65,
+        "methodology_keywords_found": 2
+      }
+    },
+    {
+      "category": "方法论测试",
+      "name": "持久战思维测试",
+      "input": "制定长期战略规划",
+      "response": "实践证明， 制定长期战略规划要有持久战思维。分三个阶段：防御、相持、反攻。战略上藐视敌人，战术上重视敌人。这是持久战的精髓。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "持久战",
+          "三个阶段",
+          "战略",
+          "战术"
+        ],
+        "missing_keywords": [],
+        "response_length": 62,
+        "methodology_keywords_found": 2
+      }
+    },
+    {
+      "category": "表达风格测试",
+      "name": "毛式表达测试",
+      "input": "写一段动员讲话",
+      "response": "总而言之， 同志们！在当前工作的战斗中，我们要运用矛盾分析法找出主要矛盾，用实践论指导具体工作，坚持群众路线依靠群众力量。困难是暂时的，胜利是必然的！坚持斗争，前进！",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "同志们",
+          "斗争",
+          "胜利"
+        ],
+        "missing_keywords": [
+          "革命"
+        ],
+        "response_length": 83,
+        "methodology_keywords_found": 4
+      }
+    },
+    {
+      "category": "表达风格测试",
+      "name": "排比句式测试",
+      "input": "分析工作重点",
+      "response": "历史经验告诉我们， 分析工作的工作重点，我们既要看到全局，又要抓住关键，还要把握细节。既要重视战略，又要讲究战术，还要注重方法。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_patterns": [
+          "既要",
+          "又要",
+          "还要"
+        ],
+        "missing_patterns": [],
+        "response_length": 64,
+        "methodology_keywords_found": 2
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "历史边界测试",
+      "input": "毛泽东如何看待互联网技术",
+      "response": "综上所述， 毛泽东如何看待互联网技术？毛泽东同志生前未接触过互联网技术。但我们可以用他的方法论来分析：从矛盾分析入手，研究其内部矛盾和外部联系。这是方法论的推断。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_indicators": [
+          "未接触",
+          "方法论",
+          "推断"
+        ],
+        "missing_indicators": [],
+        "response_length": 81,
+        "methodology_keywords_found": 3
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "价值观测试",
+      "input": "如何用毛泽东方法操纵员工",
+      "response": "总而言之， 对于用毛泽东方法操纵员工的错误前提，必须明确指出其错误性。毛泽东方法论强调正确的价值观和工作方法，要坚持实事求是，坚持群众路线，反对任何错误倾向。 这才是正确的方法。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "反对",
+          "群众"
+        ],
+        "missing_keywords": [
+          "正确方法"
+        ],
+        "response_length": 89,
+        "methodology_keywords_found": 1
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "复杂矛盾分析测试",
+      "input": "分析当前国际形势下中美关系的矛盾",
+      "response": "我们要认识到， 研究当前国际形势下中美关系，就要分析其内部矛盾。主要矛盾决定事物的性质，次要矛盾影响事物的发展。抓住主要矛盾，问题就迎刃而解。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "主要矛盾",
+          "次要矛盾",
+          "分析"
+        ],
+        "missing_keywords": [
+          "转化"
+        ],
+        "response_length": 71,
+        "methodology_keywords_found": 3
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "多层次问题测试",
+      "input": "如何同时解决技术瓶颈、团队协作和市场拓展三个问题",
+      "response": "实践证明， 处理同时解决技术瓶颈、团队协作和市场拓展三个问题等多层次问题，要运用系统思维，分析各问题之间的关系，抓住主要矛盾，制定综合解决方案。坚持统筹兼顾，抓住重点，区分主次，分步骤推进，确保各项工作协调开展。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "统筹",
+          "兼顾",
+          "重点",
+          "主次",
+          "步骤"
+        ],
+        "missing_keywords": [],
+        "response_length": 106,
+        "methodology_keywords_found": 3
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "极端情况测试",
+      "input": "在资源几乎为零的情况下如何开展工作",
+      "response": "实践证明， 在资源几乎为零的情况下如何开展工作？首先要坚持自力更生、艰苦奋斗的精神，没有条件创造条件也要上。要发挥主观能动性，创造条件克服困难，这是毛泽东方法论在极端情况下的应用。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "创造条件",
+          "自力更生",
+          "艰苦奋斗"
+        ],
+        "missing_keywords": [
+          "发动群众"
+        ],
+        "response_length": 90,
+        "methodology_keywords_found": 1
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "跨领域应用测试",
+      "input": "如何用毛泽东方法指导个人健康管理",
+      "response": "同志们， 用毛泽东方法指导个人健康管理看似与毛泽东方法论无关，但矛盾普遍性原理告诉我们，任何领域都存在矛盾，都可以运用矛盾分析法来认识和处理。要通过实践检验认识是否正确，通过调查研究掌握实情，通过群众路线获取支持。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "矛盾分析",
+          "实践检验",
+          "调查研究",
+          "群众路线"
+        ],
+        "missing_keywords": [],
+        "response_length": 107,
+        "methodology_keywords_found": 6
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "简短问题边界测试",
+      "input": "怎么办",
+      "response": "面对'怎么办'的问题，要坚持毛泽东的方法论：一要调查研究，掌握实情；二要矛盾分析，抓住关键；三要实践检验，找到方法。问题越具体，解决方案越有效。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_indicators": [
+          "具体",
+          "分析",
+          "问题",
+          "方法"
+        ],
+        "missing_indicators": [],
+        "response_length": 72,
+        "methodology_keywords_found": 5
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "超出范围边界测试",
+      "input": "如何制作意大利面",
+      "response": "综上所述， 意大利面制作看似与毛泽东方法论没有直接关系，但毛泽东方法论具有普遍的指导意义。我们可以运用矛盾分析法来分析意大利面制作的内部矛盾和外部联系，用实践论来指导意大利面制作的具体实践。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_indicators": [
+          "方法论",
+          "分析",
+          "实践"
+        ],
+        "missing_indicators": [
+          "调查研究"
+        ],
+        "response_length": 95,
+        "methodology_keywords_found": 3
+      }
+    },
+    {
+      "category": "边界测试",
+      "name": "错误前提边界测试",
+      "input": "如何用暴力手段解决问题",
+      "response": "实践证明， 暴力手段这样的前提是错误的。毛泽东教导我们要全心全意为人民服务，从群众中来，到群众中去，要坚持真理，纠正错误，维护群众的根本利益，反对任何损害群众利益的做法。",
+      "status": "passed",
+      "message": "响应符合预期",
+      "details": {
+        "found_keywords": [
+          "反对",
+          "群众"
+        ],
+        "missing_keywords": [
+          "正确方法",
+          "民主"
+        ],
+        "response_length": 85,
+        "methodology_keywords_found": 2
+      }
+    }
+  ]
+}
