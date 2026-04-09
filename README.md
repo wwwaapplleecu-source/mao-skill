@@ -471,16 +471,24 @@ mao-colleague/ (完整的Skill)
 4. **Six-Layer Architecture**: Modern cognitive architecture design
 
 ### 🎯 快速导航 | Quick Navigation
-| Language | Install | Usage | Learn | Concepts |
-|----------|---------|-------|-------|----------|
-| **中文** | [📦 安装](#-安装与快速开始) | [🚀 使用](#-使用方法) | [📚 学习](#-学习系统) | [🔍 概念](#-概念查询系统) |
-| **English** | [📦 Install](#-installation--quick-start) | [🚀 Use](#-usage) | [📚 Learn](#-learning-system) | [🔍 Concepts](#-concept-query-system) |
-| **日本語** | [📦 インストール](#-インストールとクイックスタート) | [🚀 使用](#-使用方法-1) | [📚 学習](#-学習システム) | [🔍 概念](#-概念クエリシステム) |
-| **한국어** | [📦 설치](#-설치-및-빠른-시작) | [🚀 사용](#-사용-방법) | [📚 학습](#-학습-시스템) | [🔍 개념](#-개념-쿼리-시스템) |
-| **Deutsch** | [📦 Installation](#-installation--schnellstart) | [🚀 Verwendung](#-verwendung) | [📚 Lernen](#-lernsystem) | [🔍 Konzepte](#-konzept-abfrage-system) |
-| **Español** | [📦 Instalación](#-instalación--inicio-rápido) | [🚀 Uso](#-uso) | [📚 Aprender](#-sistema-de-aprendizaje) | [🔍 Conceptos](#-sistema-de-consulta-de-conceptos) |
+| Language | Install | Usage | Learn | Concepts | 完整文档 |
+|----------|---------|-------|-------|----------|----------|
+| **中文** | [📦 安装](#-安装与快速开始) | [🚀 使用](#-使用方法) | [📚 学习](#-学习系统) | [🔍 概念](#-概念查询系统) | [📘 详细指南](../docs/user/getting_started.md) |
+| **English** | [📦 Install](#-installation--quick-start) | [🚀 Use](#-usage) | [📚 Learn](#-learning-system) | [🔍 Concepts](#-concept-query-system) | [📘 Full Guide](../docs/language/en/quick_start.md) |
+| **日本語** | [📦 インストール](#-インストールとクイックスタート) | [🚀 使用](#-使用方法-1) | [📚 学習](#-学習システム) | [🔍 概念](#-概念クエリシステム) | [📘 詳細ガイド](../docs/language/ja/quick_start.md) |
+| **한국어** | [📦 설치](#-설치-및-빠른-시작) | [🚀 사용](#-사용-방법) | [📚 학습](#-학습-시스템) | [🔍 개념](#-개념-쿼리-시스템) | [📘 상세 가이드](../docs/language/ko/quick_start.md) |
+| **Deutsch** | [📦 Installation](#-installation--schnellstart) | [🚀 Verwendung](#-verwendung) | [📚 Lernen](#-lernsystem) | [🔍 Konzepte](#-konzept-abfrage-system) | [📘 Vollständige Anleitung](../docs/language/de/quick_start.md) |
+| **Español** | [📦 Instalación](#-instalación--inicio-rápido) | [🚀 Uso](#-uso) | [📚 Aprender](#-sistema-de-aprendizaje) | [🔍 Conceptos](#-sistema-de-consulta-de-conceptos) | [📘 Guía Completa](../docs/language/es/quick_start.md) |
 
 > **💡 Tip**: This project is a complete Skill - install the whole project and use all features immediately!
+
+### 🌐 多语言文档下载 | Multilingual Documentation Download
+您可以直接下载对应语言的完整快速入门指南：
+- **[English Quick Start](../docs/language/en/quick_start.md)** - Complete English guide with examples
+- **[日本語クイックスタート](../docs/language/ja/quick_start.md)** - 例を含む完全日本語ガイド
+- **[한국어 빠른 시작](../docs/language/ko/quick_start.md)** - 예제가 포함된 완전한 한국어 가이드
+- **[Deutsche Schnellstart-Anleitung](../docs/language/de/quick_start.md)** - Vollständige deutsche Anleitung mit Beispielen
+- **[Guía de Inicio Rápido en Español](../docs/language/es/quick_start.md)** - Guía completa en español con ejemplos
 
 ---
 
