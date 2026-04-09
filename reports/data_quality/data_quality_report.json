@@ -1,387 +1,963 @@
 {
   "summary": {
-    "scan_time": "mao-colleague",
-    "total_files": 19,
-    "files_analyzed": 8,
-    "average_completeness_score": 74.9,
-    "files_by_score_range": {
-      "excellent_90_100": 0,
-      "good_70_89": 7,
-      "fair_50_69": 1,
-      "poor_0_49": 11
+    "total_files": 33,
+    "status_counts": {
+      "template": 2,
+      "good": 6,
+      "incomplete": 7,
+      "poor": 3,
+      "excellent": 12,
+      "backup": 2,
+      "fair": 1
     },
-    "common_issues": [
-      [
-        "分析错误: nothing to repeat at position 0",
-        11
-      ],
-      [
-        "概念提取失败",
-        8
-      ]
-    ],
-    "recommendations": [
-      "数据质量中等，建议补充关键著作内容"
-    ]
-  },
-  "details": {
-    "annotations\\哲学批注摘录.md": {
-      "file_path": "annotations\\哲学批注摘录.md",
-      "file_size": 2798,
-      "character_count": 1019,
-      "line_count": 45,
-      "section_count": 9,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
+    "category_counts": {
+      "root": 3,
+      "annotations": 2,
+      "letters": 2,
+      "methodology": 3,
+      "military": 4,
+      "philosophy": 2,
+      "selected_works": 10,
+      "speeches": 4,
+      "work_methods": 3
     },
-    "letters\\致徐特立同志的信.md": {
-      "file_path": "letters\\致徐特立同志的信.md",
-      "file_size": 1790,
-      "character_count": 612,
-      "line_count": 14,
-      "section_count": 1,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "methodology\\关于正确处理人民内部矛盾的问题.md": {
-      "file_path": "methodology\\关于正确处理人民内部矛盾的问题.md",
-      "file_size": 5576,
-      "character_count": 2094,
-      "line_count": 106,
-      "section_count": 14,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 70,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "内容基本完整，可优化格式"
-      ]
-    },
-    "methodology\\实践论.md": {
-      "file_path": "methodology\\实践论.md",
-      "file_size": 28859,
-      "character_count": 9809,
-      "line_count": 89,
-      "section_count": 2,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "methodology\\矛盾论.md": {
-      "file_path": "methodology\\矛盾论.md",
-      "file_size": 83661,
-      "character_count": 28379,
-      "line_count": 315,
-      "section_count": 1,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "military\\中国革命战争的战略问题.md": {
-      "file_path": "military\\中国革命战争的战略问题.md",
-      "file_size": 146661,
-      "character_count": 49595,
-      "line_count": 400,
-      "section_count": 13,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 80,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "内容基本完整，可优化格式"
-      ]
-    },
-    "military\\论持久战.md": {
-      "file_path": "military\\论持久战.md",
-      "file_size": 840812,
-      "character_count": 294514,
-      "line_count": 5370,
-      "section_count": 158,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "philosophy\\关于自由与必然的思考.md": {
-      "file_path": "philosophy\\关于自由与必然的思考.md",
-      "file_size": 3850,
-      "character_count": 1306,
-      "line_count": 24,
-      "section_count": 5,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "selected_works\\新民主主义论.md": {
-      "file_path": "selected_works\\新民主主义论.md",
-      "file_size": 11455,
-      "character_count": 4085,
-      "line_count": 128,
-      "section_count": 16,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 80,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "内容基本完整，可优化格式"
-      ]
-    },
-    "selected_works\\毛泽东选集全卷.md": {
-      "file_path": "selected_works\\毛泽东选集全卷.md",
-      "file_size": 2226542,
-      "character_count": 797912,
-      "line_count": 17182,
-      "section_count": 86,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "selected_works\\湖南农民运动考察报告.md": {
-      "file_path": "selected_works\\湖南农民运动考察报告.md",
-      "file_size": 44344,
-      "character_count": 15131,
-      "line_count": 159,
-      "section_count": 17,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 80,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "内容基本完整，可优化格式"
-      ]
-    },
-    "selected_works\\论人民民主专政.md": {
-      "file_path": "selected_works\\论人民民主专政.md",
-      "file_size": 5343,
-      "character_count": 2013,
-      "line_count": 84,
-      "section_count": 11,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 70,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "内容基本完整，可优化格式"
-      ]
-    },
-    "selected_works\\论联合政府.md": {
-      "file_path": "selected_works\\论联合政府.md",
-      "file_size": 10481,
-      "character_count": 3757,
-      "line_count": 134,
-      "section_count": 18,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 80,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "内容基本完整，可优化格式"
-      ]
-    },
-    "speeches\\为人民服务.md": {
-      "file_path": "speeches\\为人民服务.md",
-      "file_size": 2378,
-      "character_count": 804,
-      "line_count": 14,
-      "section_count": 1,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "speeches\\在延安文艺座谈会上的讲话（节选）.md": {
-      "file_path": "speeches\\在延安文艺座谈会上的讲话（节选）.md",
-      "file_size": 4962,
-      "character_count": 1686,
-      "line_count": 40,
-      "section_count": 7,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "speeches\\纪念白求恩.md": {
-      "file_path": "speeches\\纪念白求恩.md",
-      "file_size": 5649,
-      "character_count": 2070,
-      "line_count": 64,
-      "section_count": 6,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 70,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "内容基本完整，可优化格式"
-      ]
-    },
-    "work_methods\\关于领导方法的若干问题.md": {
-      "file_path": "work_methods\\关于领导方法的若干问题.md",
-      "file_size": 5485,
-      "character_count": 1851,
-      "line_count": 28,
-      "section_count": 5,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": false,
-      "has_category": false,
-      "has_content_intro": false,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
-    },
-    "work_methods\\关心群众生活，注意工作方法.md": {
-      "file_path": "work_methods\\关心群众生活，注意工作方法.md",
-      "file_size": 5192,
-      "character_count": 1928,
-      "line_count": 68,
-      "section_count": 6,
-      "concept_count": 0,
-      "has_completeness_mark": true,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 10,
-      "completeness_score": 69,
-      "issues": [
-        "概念提取失败"
-      ],
-      "suggestions": [
-        "建议补充部分内容"
-      ]
-    },
-    "著作内容贡献指南.md": {
-      "file_path": "著作内容贡献指南.md",
-      "file_size": 7807,
-      "character_count": 4026,
-      "line_count": 264,
-      "section_count": 53,
-      "concept_count": 0,
-      "has_completeness_mark": false,
-      "has_author_info": true,
-      "has_category": true,
-      "has_content_intro": true,
-      "format_score": 0,
-      "completeness_score": 0,
-      "issues": [
-        "分析错误: nothing to repeat at position 0"
-      ],
-      "suggestions": []
+    "avg_quality_score": 63.18,
+    "quality_score_distribution": {
+      "excellent": 15,
+      "good": 7,
+      "fair": 1,
+      "poor": 3,
+      "incomplete": 7
     }
-  }
+  },
+  "results": [
+    {
+      "file_path": "knowledge\\README.md",
+      "relative_path": "README.md",
+      "quality_score": 70,
+      "status": "template",
+      "metrics": {
+        "content_length": 2604,
+        "line_count": 145,
+        "section_count": 20,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 1024,
+        "concept_density": 0.3932411674347158,
+        "is_template": true,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加总结、历史意义或核心观点部分",
+        "将此模板文件替换为实际内容"
+      ]
+    },
+    {
+      "file_path": "knowledge\\著作内容贡献指南.md",
+      "relative_path": "著作内容贡献指南.md",
+      "quality_score": 85,
+      "status": "template",
+      "metrics": {
+        "content_length": 4026,
+        "line_count": 264,
+        "section_count": 53,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 1771,
+        "concept_density": 0.43989071038251365,
+        "is_template": true,
+        "is_backup": false
+      },
+      "recommendations": [
+        "将此模板文件替换为实际内容"
+      ]
+    },
+    {
+      "file_path": "knowledge\\著作索引.md",
+      "relative_path": "著作索引.md",
+      "quality_score": 75,
+      "status": "good",
+      "metrics": {
+        "content_length": 1744,
+        "line_count": 115,
+        "section_count": 16,
+        "has_author": true,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": true,
+        "has_conclusion": false,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 613,
+        "concept_density": 0.3514908256880734,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加总结、历史意义或核心观点部分"
+      ]
+    },
+    {
+      "file_path": "knowledge\\annotations\\README.md",
+      "relative_path": "annotations\\README.md",
+      "quality_score": 10,
+      "status": "incomplete",
+      "metrics": {
+        "content_length": 51,
+        "line_count": 9,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 22,
+        "concept_density": 0.43137254901960786,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\annotations\\哲学批注摘录.md",
+      "relative_path": "annotations\\哲学批注摘录.md",
+      "quality_score": 75,
+      "status": "good",
+      "metrics": {
+        "content_length": 1019,
+        "line_count": 46,
+        "section_count": 9,
+        "has_author": false,
+        "has_date": true,
+        "has_content_intro": false,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": false,
+        "chinese_char_count": 776,
+        "concept_density": 0.76153091265947,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加作者信息（毛泽东）",
+        "添加内容简介或摘要"
+      ]
+    },
+    {
+      "file_path": "knowledge\\letters\\README.md",
+      "relative_path": "letters\\README.md",
+      "quality_score": 10,
+      "status": "incomplete",
+      "metrics": {
+        "content_length": 47,
+        "line_count": 9,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 22,
+        "concept_density": 0.46808510638297873,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\letters\\致徐特立同志的信.md",
+      "relative_path": "letters\\致徐特立同志的信.md",
+      "quality_score": 30,
+      "status": "poor",
+      "metrics": {
+        "content_length": 612,
+        "line_count": 15,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": true,
+        "has_separators": false,
+        "chinese_char_count": 532,
+        "concept_density": 0.869281045751634,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\methodology\\关于正确处理人民内部矛盾的问题.md",
+      "relative_path": "methodology\\关于正确处理人民内部矛盾的问题.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 2094,
+        "line_count": 107,
+        "section_count": 14,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 1552,
+        "concept_density": 0.7411652340019103,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\methodology\\实践论.md",
+      "relative_path": "methodology\\实践论.md",
+      "quality_score": 60,
+      "status": "good",
+      "metrics": {
+        "content_length": 9809,
+        "line_count": 90,
+        "section_count": 2,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 8635,
+        "concept_density": 0.880313997349373,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "增加章节结构，使用更多标题层级"
+      ]
+    },
+    {
+      "file_path": "knowledge\\methodology\\矛盾论.md",
+      "relative_path": "methodology\\矛盾论.md",
+      "quality_score": 65,
+      "status": "good",
+      "metrics": {
+        "content_length": 28379,
+        "line_count": 316,
+        "section_count": 1,
+        "has_author": true,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 25059,
+        "concept_density": 0.8830120864019169,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "增加章节结构，使用更多标题层级"
+      ]
+    },
+    {
+      "file_path": "knowledge\\military\\中国革命战争的战略问题.md",
+      "relative_path": "military\\中国革命战争的战略问题.md",
+      "quality_score": 100,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 49595,
+        "line_count": 401,
+        "section_count": 13,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 43161,
+        "concept_density": 0.8702691803609235,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\military\\中国革命战争的战略问题_backup_20260409.md",
+      "relative_path": "military\\中国革命战争的战略问题_backup_20260409.md",
+      "quality_score": 95,
+      "status": "backup",
+      "metrics": {
+        "content_length": 49204,
+        "line_count": 398,
+        "section_count": 11,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 42820,
+        "concept_density": 0.8702544508576538,
+        "is_template": false,
+        "is_backup": true
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\military\\中国革命战争的战略问题_complete.md",
+      "relative_path": "military\\中国革命战争的战略问题_complete.md",
+      "quality_score": 100,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 49588,
+        "line_count": 401,
+        "section_count": 13,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 43155,
+        "concept_density": 0.8702710333145116,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\military\\论持久战.md",
+      "relative_path": "military\\论持久战.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 294514,
+        "line_count": 5371,
+        "section_count": 158,
+        "has_author": true,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 245728,
+        "concept_density": 0.834350828823078,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要"
+      ]
+    },
+    {
+      "file_path": "knowledge\\philosophy\\README.md",
+      "relative_path": "philosophy\\README.md",
+      "quality_score": 10,
+      "status": "incomplete",
+      "metrics": {
+        "content_length": 50,
+        "line_count": 9,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 22,
+        "concept_density": 0.44,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\philosophy\\关于自由与必然的思考.md",
+      "relative_path": "philosophy\\关于自由与必然的思考.md",
+      "quality_score": 60,
+      "status": "good",
+      "metrics": {
+        "content_length": 1306,
+        "line_count": 25,
+        "section_count": 5,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": false,
+        "chinese_char_count": 1131,
+        "concept_density": 0.8660030627871363,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节"
+      ]
+    },
+    {
+      "file_path": "knowledge\\selected_works\\新民主主义论.md",
+      "relative_path": "selected_works\\新民主主义论.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 4085,
+        "line_count": 129,
+        "section_count": 16,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 3330,
+        "concept_density": 0.8151774785801713,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\selected_works\\毛泽东选集全卷.md",
+      "relative_path": "selected_works\\毛泽东选集全卷.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 797912,
+        "line_count": 17183,
+        "section_count": 86,
+        "has_author": true,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 641603,
+        "concept_density": 0.8041024574138501,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要"
+      ]
+    },
+    {
+      "file_path": "knowledge\\selected_works\\湖南农民运动考察报告.md",
+      "relative_path": "selected_works\\湖南农民运动考察报告.md",
+      "quality_score": 100,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 15131,
+        "line_count": 160,
+        "section_count": 17,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 12799,
+        "concept_density": 0.8458793206000925,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\selected_works\\湖南农民运动考察报告_backup_20260409.md",
+      "relative_path": "selected_works\\湖南农民运动考察报告_backup_20260409.md",
+      "quality_score": 90,
+      "status": "backup",
+      "metrics": {
+        "content_length": 5554,
+        "line_count": 101,
+        "section_count": 11,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 4520,
+        "concept_density": 0.8138278718041051,
+        "is_template": false,
+        "is_backup": true
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\selected_works\\湖南农民运动考察报告_complete.md",
+      "relative_path": "selected_works\\湖南农民运动考察报告_complete.md",
+      "quality_score": 100,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 15131,
+        "line_count": 160,
+        "section_count": 17,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 12799,
+        "concept_density": 0.8458793206000925,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\selected_works\\湖南农民运动考察报告_extracted.md",
+      "relative_path": "selected_works\\湖南农民运动考察报告_extracted.md",
+      "quality_score": 15,
+      "status": "incomplete",
+      "metrics": {
+        "content_length": 24,
+        "line_count": 4,
+        "section_count": 0,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 21,
+        "concept_density": 0.875,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\selected_works\\湖南农民运动考察报告_extracted_v2.md",
+      "relative_path": "selected_works\\湖南农民运动考察报告_extracted_v2.md",
+      "quality_score": 15,
+      "status": "incomplete",
+      "metrics": {
+        "content_length": 22,
+        "line_count": 4,
+        "section_count": 0,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 17,
+        "concept_density": 0.7727272727272727,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\selected_works\\湖南农民运动考察报告_extracted_v3.md",
+      "relative_path": "selected_works\\湖南农民运动考察报告_extracted_v3.md",
+      "quality_score": 30,
+      "status": "poor",
+      "metrics": {
+        "content_length": 18,
+        "line_count": 2,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": true,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 12,
+        "concept_density": 0.6666666666666666,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\selected_works\\论人民民主专政.md",
+      "relative_path": "selected_works\\论人民民主专政.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 2013,
+        "line_count": 85,
+        "section_count": 11,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 1494,
+        "concept_density": 0.7421758569299552,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\selected_works\\论联合政府.md",
+      "relative_path": "selected_works\\论联合政府.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 3757,
+        "line_count": 135,
+        "section_count": 18,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 3051,
+        "concept_density": 0.8120841096619643,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\speeches\\README.md",
+      "relative_path": "speeches\\README.md",
+      "quality_score": 10,
+      "status": "incomplete",
+      "metrics": {
+        "content_length": 48,
+        "line_count": 9,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 22,
+        "concept_density": 0.4583333333333333,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\speeches\\为人民服务.md",
+      "relative_path": "speeches\\为人民服务.md",
+      "quality_score": 35,
+      "status": "poor",
+      "metrics": {
+        "content_length": 804,
+        "line_count": 15,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": false,
+        "chinese_char_count": 700,
+        "concept_density": 0.8706467661691543,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级"
+      ]
+    },
+    {
+      "file_path": "knowledge\\speeches\\在延安文艺座谈会上的讲话（节选）.md",
+      "relative_path": "speeches\\在延安文艺座谈会上的讲话（节选）.md",
+      "quality_score": 55,
+      "status": "fair",
+      "metrics": {
+        "content_length": 1686,
+        "line_count": 41,
+        "section_count": 7,
+        "has_author": true,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": true,
+        "has_separators": false,
+        "chinese_char_count": 1462,
+        "concept_density": 0.867141162514828,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\speeches\\纪念白求恩.md",
+      "relative_path": "speeches\\纪念白求恩.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 2070,
+        "line_count": 65,
+        "section_count": 6,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 1621,
+        "concept_density": 0.7830917874396135,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    },
+    {
+      "file_path": "knowledge\\work_methods\\README.md",
+      "relative_path": "work_methods\\README.md",
+      "quality_score": 10,
+      "status": "incomplete",
+      "metrics": {
+        "content_length": 52,
+        "line_count": 9,
+        "section_count": 1,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": false,
+        "has_methodology": false,
+        "has_proper_headings": false,
+        "has_separators": false,
+        "chinese_char_count": 22,
+        "concept_density": 0.4230769230769231,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "增加内容长度，补充更多原文或分析",
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节",
+        "添加总结、历史意义或核心观点部分",
+        "增加章节结构，使用更多标题层级",
+        "补充方法论相关内容，如分析框架、核心观点等"
+      ]
+    },
+    {
+      "file_path": "knowledge\\work_methods\\关于领导方法的若干问题.md",
+      "relative_path": "work_methods\\关于领导方法的若干问题.md",
+      "quality_score": 60,
+      "status": "good",
+      "metrics": {
+        "content_length": 1851,
+        "line_count": 29,
+        "section_count": 5,
+        "has_author": false,
+        "has_date": false,
+        "has_content_intro": false,
+        "has_body": false,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": false,
+        "chinese_char_count": 1632,
+        "concept_density": 0.8816855753646677,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": [
+        "添加作者信息（毛泽东）",
+        "添加写作时间或历史时期",
+        "添加内容简介或摘要",
+        "添加正文内容，使用##或###标题组织章节"
+      ]
+    },
+    {
+      "file_path": "knowledge\\work_methods\\关心群众生活，注意工作方法.md",
+      "relative_path": "work_methods\\关心群众生活，注意工作方法.md",
+      "quality_score": 90,
+      "status": "excellent",
+      "metrics": {
+        "content_length": 1928,
+        "line_count": 69,
+        "section_count": 6,
+        "has_author": true,
+        "has_date": true,
+        "has_content_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "has_methodology": true,
+        "has_proper_headings": true,
+        "has_separators": true,
+        "chinese_char_count": 1452,
+        "concept_density": 0.7531120331950207,
+        "is_template": false,
+        "is_backup": false
+      },
+      "recommendations": []
+    }
+  ],
+  "timestamp": "2026-04-09T15:28:22.568786"
 }
