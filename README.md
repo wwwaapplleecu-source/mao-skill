@@ -13,11 +13,48 @@
 
 <br>
 
+## 🌍 多语言介绍 | Multilingual Introduction
+
+| 语言 | 介绍 | 快速导航 |
+|------|------|----------|
+| **中文** | 毛泽东方法论AI助手 - 基于六层认知架构的智能分析系统，提供矛盾分析、实践指导、调查研究等6种核心方法，支持674个概念查询和四级渐进学习。 | [📦 安装](#-安装与快速开始) • [🚀 使用](#-使用方法) • [📚 学习](#-学习系统) |
+| **English** | Mao Zedong Methodology AI Assistant - A six-layer cognitive architecture based intelligent analysis system, offering 6 core methods including contradiction analysis, practice theory, and investigation research, supporting 674 concept queries and four-level progressive learning. | [📦 Install](#-installation--quick-start) • [🚀 Usage](#-usage) • [📚 Learn](#-learning-system) |
+| **日本語** | 毛沢東方法論AIアシスタント - 6層認知アーキテクチャに基づくインテリジェント分析システム。矛盾分析、実践理論、調査研究など6つのコアメソッドを提供し、674の概念クエリと4段階の漸進的学習をサポートします。 | [📦 インストール](#-インストールとクイックスタート) • [🚀 使用方法](#-使用方法) • [📚 学習](#-学習システム) |
+| **한국어** | 마오쩌둥 방법론 AI 어시스턴트 - 6계층 인지 아키텍처 기반 지능형 분석 시스템. 모순 분석, 실천 이론, 조사 연구 등 6가지 핵심 방법을 제공하며, 674개 개념 쿼리와 4단계 점진적 학습을 지원합니다. | [📦 설치](#-설치-및-빠른-시작) • [🚀 사용법](#-사용-방법) • [📚 학습](#-학습-시스템) |
+| **Deutsch** | Mao Zedong Methodologie KI-Assistent - Ein intelligentes Analysesystem basierend auf einer sechsschichtigen kognitiven Architektur. Bietet 6 Kernmethoden inklusive Widerspruchsanalyse, Praxistheorie und Untersuchungsforschung, unterstützt 674 Konzeptabfragen und vierstufiges progressives Lernen. | [📦 Installation](#-installation--schnellstart) • [🚀 Verwendung](#-verwendung) • [📚 Lernen](#-lernsystem) |
+| **Español** | Asistente de IA de Metodología Mao Zedong - Un sistema de análisis inteligente basado en arquitectura cognitiva de seis capas. Ofrece 6 métodos principales incluyendo análisis de contradicciones, teoría de la práctica e investigación, compatible con 674 consultas de conceptos y aprendizaje progresivo de cuatro niveles. | [📦 Instalación](#-instalación--inicio-rápido) • [🚀 Uso](#-uso) • [📚 Aprender](#-sistema-de-aprendizaje) |
+
+<br>
+
 **矛盾分析抓不住重点？战略决策找不到方向？群众工作隔着一层？**
 
 **将毛泽东的智慧蒸馏为AI可用的方法论工具，提供智能分析、渐进学习、概念查询等完整功能体系。**
 
+**Struggling with contradiction analysis? Can't find direction for strategic decisions? Feeling distant from mass work? Distill Mao Zedong's wisdom into AI-usable methodological tools, providing intelligent analysis, progressive learning, concept querying and other complete functional systems.**
+
 ---
+
+## 🏗️ 六层认知架构可视化
+
+```mermaid
+graph TB
+    UI[用户界面层<br>命令解析/响应格式化] --> Analytics[分析决策层<br>智能推荐 78%+准确率]
+    Analytics --> Methods[方法执行层<br>6种分析方法]
+    Methods --> Knowledge[知识检索层<br>674概念库/四级学习]
+    Knowledge --> Performance[性能监控层<br>实时监控/缓存优化]
+    Performance --> Integration[集成接口层<br>统一接口/向后兼容]
+    
+    subgraph "核心功能流"
+        UI --> Analytics --> Methods --> Knowledge --> Performance --> Integration
+    end
+    
+    style UI fill:#e1f5fe
+    style Analytics fill:#f3e5f5
+    style Methods fill:#e8f5e8
+    style Knowledge fill:#fff3e0
+    style Performance fill:#fce4ec
+    style Integration fill:#f1f8e9
+```
 
 ## 🚀 核心功能
 
@@ -35,6 +72,12 @@
 > **📦 项目即Skill**: 整个`mao-colleague`项目就是一个完整的毛泽东.skill，安装后即可直接使用所有功能，无需单独复制子目录。
 
 ## 📦 安装与快速开始
+
+<a id="installation--quick-start"></a>
+<a id="インストールとクイックスタート"></a>
+<a id="설치-및-빠른-시작"></a>
+<a id="installation--schnellstart"></a>
+<a id="instalación--inicio-rápido"></a>
 
 ### 支持平台
 - **OpenClaw** ✅ 原生支持
@@ -67,6 +110,12 @@ pip3 install -r requirements.txt
 ---
 
 ## 🎯 使用方法
+
+<a id="usage"></a>
+<a id="使用方法"></a>
+<a id="사용-방법"></a>
+<a id="verwendung"></a>
+<a id="uso"></a>
 
 ### 核心命令架构
 
@@ -389,6 +438,49 @@ mao-colleague/ (完整的Skill)
 
 ### Q4: 概念查询有什么用？
 **A**: 毛泽东.skill包含674个核心概念，如"矛盾"、"实践"、"群众路线"等。使用`/mao concepts [概念名]`可以查询概念的详细解释、相关概念和应用示例。
+
+---
+
+## 🌍 多语言快速指南 | Multilingual Quick Guide
+
+### 📦 安装与快速开始 | Installation & Quick Start
+- **English**: Install the complete project as a Skill: `git clone https://github.com/wwwaapplleecu-source/mao-skill [skill-directory]`
+- **日本語**: プロジェクト全体をSkillとしてインストール: `git clone https://github.com/wwwaapplleecu-source/mao-skill [skill-directory]`
+- **한국어**: 전체 프로젝트를 Skill로 설치: `git clone https://github.com/wwwaapplleecu-source/mao-skill [skill-directory]`
+- **Deutsch**: Installieren Sie das gesamte Projekt als Skill: `git clone https://github.com/wwwaapplleecu-source/mao-skill [skill-directory]`
+- **Español**: Instale el proyecto completo como Skill: `git clone https://github.com/wwwaapplleecu-source/mao-skill [skill-directory]`
+
+### 🚀 使用方法 | Usage
+- **English**: Use `/mao [your question]` for intelligent analysis, `/mao learn` to start learning
+- **日本語**: インテリジェント分析には `/mao [質問]`、学習開始には `/mao learn` を使用
+- **한국어**: 지능형 분석은 `/mao [질문]`, 학습 시작은 `/mao learn` 사용
+- **Deutsch**: Verwenden Sie `/mao [Ihre Frage]` für intelligente Analyse, `/mao learn` zum Lernen
+- **Español**: Use `/mao [su pregunta]` para análisis inteligente, `/mao learn` para comenzar a aprender
+
+### 📚 学习系统 | Learning System
+- **English**: Four-level progressive learning: Beginner (15min) → Basic (1h) → Advanced (3h) → Professional (10h)
+- **日本語**: 4段階漸進学習: 入門(15分)→基礎(1時間)→応用(3時間)→専門(10時間)
+- **한국어**: 4단계 점진적 학습: 입문(15분)→기초(1시간)→고급(3시간)→전문(10시간)
+- **Deutsch**: Vierstufiges progressives Lernen: Anfänger (15min) → Grundlagen (1h) → Fortgeschritten (3h) → Profi (10h)
+- **Español**: Aprendizaje progresivo de cuatro niveles: Principiante (15min) → Básico (1h) → Avanzado (3h) → Profesional (10h)
+
+### 🔍 核心功能 | Core Features
+1. **Intelligent Analysis**: 6 methods, 78%+ recommendation accuracy
+2. **Progressive Learning**: Four-level learning paths
+3. **Concept Query**: 674 Mao Zedong core concepts
+4. **Six-Layer Architecture**: Modern cognitive architecture design
+
+### 🎯 快速导航 | Quick Navigation
+| Language | Install | Usage | Learn | Concepts |
+|----------|---------|-------|-------|----------|
+| **中文** | [📦 安装](#-安装与快速开始) | [🚀 使用](#-使用方法) | [📚 学习](#-学习系统) | [🔍 概念](#-概念查询系统) |
+| **English** | [📦 Install](#-installation--quick-start) | [🚀 Use](#-usage) | [📚 Learn](#-learning-system) | [🔍 Concepts](#-concept-query-system) |
+| **日本語** | [📦 インストール](#-インストールとクイックスタート) | [🚀 使用](#-使用方法-1) | [📚 学習](#-学習システム) | [🔍 概念](#-概念クエリシステム) |
+| **한국어** | [📦 설치](#-설치-및-빠른-시작) | [🚀 사용](#-사용-방법) | [📚 학습](#-학습-시스템) | [🔍 개념](#-개념-쿼리-시스템) |
+| **Deutsch** | [📦 Installation](#-installation--schnellstart) | [🚀 Verwendung](#-verwendung) | [📚 Lernen](#-lernsystem) | [🔍 Konzepte](#-konzept-abfrage-system) |
+| **Español** | [📦 Instalación](#-instalación--inicio-rápido) | [🚀 Uso](#-uso) | [📚 Aprender](#-sistema-de-aprendizaje) | [🔍 Conceptos](#-sistema-de-consulta-de-conceptos) |
+
+> **💡 Tip**: This project is a complete Skill - install the whole project and use all features immediately!
 
 ---
 
