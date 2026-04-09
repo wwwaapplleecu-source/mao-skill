@@ -1,0 +1,136 @@
+{
+  "benchmark_date": "2026-04-09 14:23:05",
+  "system_info": {
+    "python_version": "3.14.3",
+    "system": "Windows",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "text_processing": {
+    "test_date": "2026-04-09 14:23:05",
+    "total_texts": 4,
+    "total_iterations": 5,
+    "total_characters": 387,
+    "avg_processing_time_seconds": 0.0006623600085731596,
+    "median_processing_time_seconds": 0.00047273001400753855,
+    "min_processing_time_seconds": 0.0002339400118216872,
+    "max_processing_time_seconds": 0.001470039994455874,
+    "avg_processing_speed_chars_per_sec": 178977.3423353962,
+    "median_processing_speed_chars_per_sec": 157454.66906820697,
+    "min_processing_speed_chars_per_sec": 93228.82336715666,
+    "max_processing_speed_chars_per_sec": 307771.20783801423,
+    "detailed_results": [
+      {
+        "text_id": 1,
+        "text_length": 72,
+        "avg_processing_time": 0.0002339400118216872,
+        "chars_per_second": 307771.20783801423
+      },
+      {
+        "text_id": 2,
+        "text_length": 67,
+        "avg_processing_time": 0.00036624001804739235,
+        "chars_per_second": 182940.1395216457
+      },
+      {
+        "text_id": 3,
+        "text_length": 54,
+        "avg_processing_time": 0.0005792200099676847,
+        "chars_per_second": 93228.82336715666
+      },
+      {
+        "text_id": 4,
+        "text_length": 194,
+        "avg_processing_time": 0.001470039994455874,
+        "chars_per_second": 131969.19861476822
+      }
+    ]
+  },
+  "skill_response": {
+    "test_date": "2026-04-09 14:23:05",
+    "total_questions": 10,
+    "total_iterations": 3,
+    "avg_response_time_seconds": 0.00011685333835581938,
+    "median_response_time_seconds": 5.748332478106022e-05,
+    "min_response_time_seconds": 3.096666963150104e-05,
+    "max_response_time_seconds": 0.0005964333346734444,
+    "avg_response_length_chars": 81.4,
+    "median_response_length_chars": 83.0,
+    "avg_responses_per_second": 17410.660784350443,
+    "detailed_results": [
+      {
+        "question_id": 1,
+        "question": "分析当前项目的主要矛盾",
+        "avg_response_time": 4.776664233456055e-05,
+        "avg_response_length": 68,
+        "responses_per_second": 20935.11185056587
+      },
+      {
+        "question_id": 2,
+        "question": "如何开展用户调研",
+        "avg_response_time": 8.586666081100702e-05,
+        "avg_response_length": 63.666666666666664,
+        "responses_per_second": 11645.963527113337
+      },
+      {
+        "question_id": 3,
+        "question": "制定长期战略规划",
+        "avg_response_time": 3.889998576293389e-05,
+        "avg_response_length": 62,
+        "responses_per_second": 25706.950282559144
+      },
+      {
+        "question_id": 4,
+        "question": "写一段动员讲话",
+        "avg_response_time": 3.666667422900597e-05,
+        "avg_response_length": 99.33333333333333,
+        "responses_per_second": 27272.72164784796
+      },
+      {
+        "question_id": 5,
+        "question": "分析工作重点",
+        "avg_response_time": 3.096666963150104e-05,
+        "avg_response_length": 58,
+        "responses_per_second": 32292.784852225235
+      },
+      {
+        "question_id": 6,
+        "question": "毛泽东如何看待互联网技术",
+        "avg_response_time": 6.720000722755988e-05,
+        "avg_response_length": 80,
+        "responses_per_second": 14880.950780461862
+      },
+      {
+        "question_id": 7,
+        "question": "如何用毛泽东方法操纵员工",
+        "avg_response_time": 4.6900007873773575e-05,
+        "avg_response_length": 87,
+        "responses_per_second": 21321.958040847127
+      },
+      {
+        "question_id": 8,
+        "question": "如何同时解决技术瓶颈、团队协作和市场拓展三个问题",
+        "avg_response_time": 0.00010626669973134995,
+        "avg_response_length": 107.66666666666667,
+        "responses_per_second": 9410.285654189636
+      },
+      {
+        "question_id": 9,
+        "question": "在资源几乎为零的情况下如何开展工作",
+        "avg_response_time": 0.0005964333346734444,
+        "avg_response_length": 86,
+        "responses_per_second": 1676.6333165256667
+      },
+      {
+        "question_id": 10,
+        "question": "如何用毛泽东方法指导个人健康管理",
+        "avg_response_time": 0.00011156670128305753,
+        "avg_response_length": 102.33333333333333,
+        "responses_per_second": 8963.247891168578
+      }
+    ]
+  },
+  "memory_usage": {
+    "error": "psutil not installed"
+  }
+}

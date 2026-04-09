@@ -1,0 +1,42 @@
+{
+  "text_processing": {
+    "test_date": "2026-04-09 14:22:42",
+    "total_texts": 4,
+    "total_iterations": 3,
+    "total_characters": 387,
+    "avg_processing_time_seconds": 0.0005647083453368396,
+    "median_processing_time_seconds": 0.000387283352514108,
+    "min_processing_time_seconds": 0.0002026333628843228,
+    "max_processing_time_seconds": 0.0012816333134348195,
+    "avg_processing_speed_chars_per_sec": 205341.55366288382,
+    "median_processing_speed_chars_per_sec": 166405.01663578372,
+    "min_processing_speed_chars_per_sec": 133234.63425101552,
+    "max_processing_speed_chars_per_sec": 355321.54712895234,
+    "detailed_results": [
+      {
+        "text_id": 1,
+        "text_length": 72,
+        "avg_processing_time": 0.0002026333628843228,
+        "chars_per_second": 355321.54712895234
+      },
+      {
+        "text_id": 2,
+        "text_length": 67,
+        "avg_processing_time": 0.0003692666844775279,
+        "chars_per_second": 181440.68451449307
+      },
+      {
+        "text_id": 3,
+        "text_length": 54,
+        "avg_processing_time": 0.0004053000205506881,
+        "chars_per_second": 133234.63425101552
+      },
+      {
+        "text_id": 4,
+        "text_length": 194,
+        "avg_processing_time": 0.0012816333134348195,
+        "chars_per_second": 151369.34875707436
+      }
+    ]
+  }
+}
