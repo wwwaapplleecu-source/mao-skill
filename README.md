@@ -309,32 +309,40 @@ pip3 install -r requirements.txt
 
 ## 📁 项目结构
 
+**📦 项目即Skill**：整个`mao-colleague`目录就是一个完整的毛泽东.skill
+
 ```
-mao-skill/
-├── colleagues/mao/          # ✅ 核心Skill文件（使用者只需此目录）
-│   ├── SKILL.md            # 主技能入口文件
-│   ├── work.md             # 方法论体系定义
-│   ├── persona.md          # 人格风格定义
-│   └── meta.json           # 技能元数据
-├── tools/                  # 🔧 核心工具库（使用者可选）
-│   ├── command_parser.py   # 命令解析器
-│   ├── smart_recommender.py # 智能推荐器
-│   ├── learning_system.py  # 学习管理系统
-│   └── mao_skill_integration.py # 集成系统
-├── data/                   # 📊 学习数据
-│   └── learning_paths.json # 四级学习路径定义
-├── docs/                   # 📖 使用文档
-│   ├── user/              # 用户指南
-│   │   ├── getting_started.md
-│   │   ├── cheat_sheet.md
-│   │   └── detailed_guide.md
-│   └── design/            # 设计文档
-├── requirements.txt        # Python依赖
-└── LICENSE                # MIT许可证
+mao-colleague/ (完整的Skill)
+├── SKILL.md                    # ✅ 主技能入口文件（根目录）
+├── mao_skill.py               # ✅ 执行入口点脚本
+├── tools/                     # ✅ 核心工具库（六层架构实现）
+│   ├── command_parser.py      # 命令解析器
+│   ├── smart_recommender.py   # 智能推荐器（准确率78%+）
+│   ├── learning_system.py     # 学习管理系统（四级渐进路径）
+│   ├── mao_skill_integration_v2.py # 六层架构现代化接口
+│   ├── analytics_layer.py     # 分析决策层
+│   ├── method_executor.py     # 方法执行层（6种分析方法）
+│   ├── knowledge_retriever.py # 知识检索层（674个概念）
+│   ├── six_layer_integration.py # 六层集成系统
+│   └── text_processor.py      # 文本处理器
+├── colleagues/mao/            # 🔄 兼容性文件（向后兼容）
+│   ├── SKILL.md              # 兼容版本（与原版一致）
+│   ├── work.md               # 方法论体系定义
+│   ├── persona.md            # 人格风格定义
+│   └── meta.json             # 技能元数据
+├── knowledge/                 # 📚 毛泽东文献资料库
+├── data/                      # 📊 学习数据和概念库
+├── docs/                      # 📖 使用文档
+├── internal/                  # 🛠️ 内部开发文件（用户不可见）
+├── requirements.txt           # 🐍 Python依赖
+└── LICENSE                    # ⚖️ MIT许可证
 ```
 
-### 快速安装（仅使用）
-如果只需要使用毛泽东.skill，**只需复制`colleagues/mao/`目录**到你的技能目录即可。
+> **🚀 完整安装使用**
+现在整个`mao-colleague`项目就是一个完整的毛泽东.skill，**请安装整个项目**到你的技能目录。
+
+### 兼容性说明
+`colleagues/mao/`目录是**向后兼容性文件**，确保老用户继续可用。新用户无需单独复制此目录。
 
 ---
 
